@@ -28,12 +28,12 @@ const Banner = () => {
               </button>
             </div>
           </div>
-          <div className="img w-3/5 md:w-2/5 flex-[1] sm:bg-pink-600 rounded-xl cursor-pointer">
+          <div className="img w-3/5 md:w-2/5 flex-[1] bg-pink-600 rounded-xl cursor-pointer">
             <picture>
               <img
                 src={myImg}
                 alt="My Photo"
-                className="rounded-xl  sm:-rotate-6 hover:rotate-0 duration-300"
+                className="rounded-xl  rotate-6 hover:rotate-0 duration-300"
               />
             </picture>
           </div>
