@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const SectionTitle = ({ heading, subHeading }) => {
   return (
     <div className="my-10 sm:my-16 lg:my-20 text-center">
@@ -9,6 +11,12 @@ const SectionTitle = ({ heading, subHeading }) => {
       </h4>
     </div>
   );
+};
+
+// props validation
+SectionTitle.propTypes = {
+  heading: PropTypes.string.isRequired,
+  subHeading: PropTypes.string.isRequired,
 };
 
 export default SectionTitle;
