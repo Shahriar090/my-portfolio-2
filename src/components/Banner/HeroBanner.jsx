@@ -37,7 +37,7 @@ const HeroBanner = () => {
             />
             {/* type animation end */}
 
-            <p className="text-gray-300 max-w-lg font-medium text-lg">
+            <p className="text-[#707070] max-w-lg font-medium text-lg">
               From Chittagong, Bangladesh, I am a React Js and Front End Web
               Developer with a passion for crafting flawless websites.Let&apos;s
               chat about turning your digital dreams into a reality.
