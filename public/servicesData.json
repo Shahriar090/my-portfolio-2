@@ -3,18 +3,18 @@
     "id": 1,
     "service": "Front End Web Development",
     "description": "Expert in crafting visually stunning and highly interactive websites using a diverse set of front-end technologies. Proficient in HTML, CSS, and JavaScript for building solid foundations. Specialized in responsive design and skilled in leveraging modern frameworks like React for dynamic user interfaces. Additionally, well-versed in optimizing styles with Tailwind CSS and Bootstrap for efficient and scalable development.",
-    "serviceImg": "https://i.ibb.co/F82LyPT/front-end.jpg"
+    "serviceImg": "https://cdn4.iconfinder.com/data/icons/outline-seo-icons/48/above-the-fold-64.png"
   },
   {
     "id": 2,
     "service": "Full Responsive Web Design",
     "description": "Crafting websites that seamlessly adapt to various screen sizes and devices. From desktops to smartphones, I specialize in creating visually appealing and user-friendly interfaces that ensure an optimal viewing and interaction experience. Elevate your online presence with designs that are not just beautiful but also fully responsive and accessible across all platforms.",
-    "serviceImg": "https://i.ibb.co/3SYvXQd/responsive-web-desing.jpg"
+    "serviceImg": "https://cdn1.iconfinder.com/data/icons/seo-and-web-development-6/32/development_adaptive_responsive_design-65-64.png"
   },
   {
     "id": 3,
     "service": "Performance Optimization",
     "description": "Enhance your website's speed and efficiency with expert performance optimization. I specialize in streamlining code, optimizing assets, and implementing best practices to ensure fast loading times and a smooth user experience. From image optimization to code minification, let's boost your site's performance for optimal user satisfaction and search engine ranking.",
-    "serviceImg": "https://i.ibb.co/m8zMZMC/performance-optimization.jpg"
+    "serviceImg": "https://cdn3.iconfinder.com/data/icons/office-productivity-and-communication/400/Productivity-40-64.png"
   }
 ]

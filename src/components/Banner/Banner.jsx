@@ -10,11 +10,12 @@ const Banner = () => {
       <Container>
         <div className="section-container flex flex-col md:flex-row gap-16 md:gap-5 lg:gap-0 items-center justify-center pt-20 md:pt-28">
           <div className="texts flex-[2] space-y-5">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-semibold capitalize text-gray-200 tracking-wide">
+            <span className="text-xl md:text-2xl text-gray-200">Hi There,</span>
+            <h2 className="text-4xl lg:text-6xl font-semibold capitalize text-gray-200 tracking-wide">
               I am a <span className="text-pink-600">front end</span> web
               developer
             </h2>
-            <p className="text-gray-300 max-w-md text-lg">
+            <p className="text-gray-300 max-w-md font-medium text-lg">
               From Chittagong, Bangladesh, I am a React Js and Front End Web
               Developer with a passion for crafting flawless websites.Let&apos;s
               chat about turning your digital dreams into a reality.
@@ -28,12 +29,12 @@ const Banner = () => {
               </button>
             </div>
           </div>
-          <div className="img w-3/5 md:w-2/5 flex-[1] bg-pink-600 rounded-xl cursor-pointer">
+          <div className="img w-3/5 md:w-2/5 flex-[1] sm:bg-pink-600 rounded-xl cursor-pointer">
             <picture>
               <img
                 src={myImg}
                 alt="My Photo"
-                className="rounded-xl  rotate-6 hover:rotate-0 duration-300"
+                className="rounded-xl  sm:rotate-6 hover:rotate-0 duration-300"
               />
             </picture>
           </div>
