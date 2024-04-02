@@ -15,7 +15,7 @@ const HeroBanner = () => {
 
         <div className="content absolute text-center top-[35%] left-[0%] md:left-[10%] transform translate(-50%, -50%)">
           <div className="texts flex flex-col gap-6">
-            <span className="text-xl text-white font-medium capitalize">
+            <span className="text-xl sm:text-2xl text-white font-medium capitalize">
               Hey There, I am
             </span>
             {/* type  animation start*/}
@@ -29,10 +29,9 @@ const HeroBanner = () => {
               ]}
               wrapper="span"
               speed={50}
+              className="inline-block text-2xl sm:text-4xl lg:text-5xl"
               style={{
-                fontSize: "2em",
-                display: "inline-block",
-                color: "white",
+                color: "#FF5D56",
               }}
               repeat={Infinity}
             />
@@ -44,10 +43,10 @@ const HeroBanner = () => {
               chat about turning your digital dreams into a reality.
             </p>
           </div>
-          <div>
-            <button className="group px-6 py-2 md:px-8 md:py-2 inline-flex items-center justify-center rounded-md bg-black border-2 border-[#FF5D56] text-[#FF5D56] hover:bg-gray-950 transition-all duration-300 mt-6">
+          <div className="mt-6">
+            <button className="group btn-outline">
               Portfolio
-              <span className="group-hover:rotate-90 duration-300">
+              <span className="group-hover:rotate-90 transition-all duration-500">
                 <IoIosArrowForward className="text-lg ml-1" />
               </span>
             </button>
