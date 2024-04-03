@@ -2,7 +2,6 @@ import SectionTitle from "../../shared/SectionTitle";
 import myImg from "../../assets/my-photo.jpg";
 import Container from "../../shared/Container";
 import { myInfos } from "./Info";
-import { space } from "postcss/lib/list";
 
 const AboutMe = () => {
   return (
@@ -27,13 +26,13 @@ const AboutMe = () => {
                 Mohammad Shahriar Hossain
               </h1>
 
-              <p className="text-[#707070] font-medium max-w-lg sm:max-w-3xl">
+              <p className="text-[#707070] font-medium max-w-lg sm:max-w-2xl text-[16px]">
                 From Chittagong, Bangladesh, I am a React Js and Front End Web
                 Developer with a passion for crafting flawless
                 websites.Let&apos;s chat about turning your digital dreams into
                 a reality.
               </p>
-              <p className="text-[#707070] font-medium max-w-3xl">
+              <p className="text-[#707070] font-medium max-w-lg sm:max-w-2xl text-[16px]">
                 My focus is on achieving 100% client satisfaction. I find joy in
                 working with JavaScript and React Js, and I also have a basic
                 understanding of Node Js, Express Js, and MongoDB . Let&apos;s

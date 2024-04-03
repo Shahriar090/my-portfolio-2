@@ -2,19 +2,37 @@
   {
     "id": 1,
     "service": "Front End Web Development",
-    "description": "Expert in crafting visually stunning and highly interactive websites using a diverse set of front-end technologies. Proficient in HTML, CSS, and JavaScript for building solid foundations. Specialized in responsive design and skilled in leveraging modern frameworks like React for dynamic user interfaces. Additionally, well-versed in optimizing styles with Tailwind CSS and Bootstrap for efficient and scalable development.",
-    "serviceImg": "https://cdn4.iconfinder.com/data/icons/outline-seo-icons/48/above-the-fold-64.png"
+    "description": "Craft visually stunning websites with HTML, CSS, and JavaScript. Specialize in responsive design and React for dynamic user interfaces. Also skilled in optimizing styles with Tailwind CSS and Bootstrap for efficient development.",
+    "serviceImg": "https://cdn3.iconfinder.com/data/icons/industries-o-z/64/8._Software_development_computer_front_end_back_end_programming-64.png"
   },
   {
     "id": 2,
     "service": "Full Responsive Web Design",
-    "description": "Crafting websites that seamlessly adapt to various screen sizes and devices. From desktops to smartphones, I specialize in creating visually appealing and user-friendly interfaces that ensure an optimal viewing and interaction experience. Elevate your online presence with designs that are not just beautiful but also fully responsive and accessible across all platforms.",
-    "serviceImg": "https://cdn1.iconfinder.com/data/icons/seo-and-web-development-6/32/development_adaptive_responsive_design-65-64.png"
+    "description": "Create websites that seamlessly adapt to various screen sizes and devices. Specialize in crafting visually appealing and user-friendly interfaces. Ensure optimal viewing experience across all platforms.",
+    "serviceImg": "https://cdn0.iconfinder.com/data/icons/development-44/22/responsive_design-64.png"
   },
   {
     "id": 3,
     "service": "Performance Optimization",
-    "description": "Enhance your website's speed and efficiency with expert performance optimization. I specialize in streamlining code, optimizing assets, and implementing best practices to ensure fast loading times and a smooth user experience. From image optimization to code minification, let's boost your site's performance for optimal user satisfaction and search engine ranking.",
-    "serviceImg": "https://cdn3.iconfinder.com/data/icons/office-productivity-and-communication/400/Productivity-40-64.png"
+    "description": "Optimize website speed and efficiency. Streamline code, optimize assets, and implement best practices for fast loading times and smooth user experience.",
+    "serviceImg": "https://cdn1.iconfinder.com/data/icons/website-42/100/website_performance-64.png"
+  },
+  {
+    "id": 4,
+    "service": "User Interface (UI) Design",
+    "description": "Design user-friendly and visually appealing interfaces. Create wireframes and prototypes to visualize designs and ensure consistency across the website or application.",
+    "serviceImg": "https://cdn0.iconfinder.com/data/icons/ui-designer-and-creative-design/64/Dashboard-statistic-stat-graph-progress-cms-ui-64.png"
+  },
+  {
+    "id": 5,
+    "service": "Code Review and Maintenance",
+    "description": "Review and optimize existing codebases for better performance and maintainability. Provide ongoing maintenance and support to keep websites up-to-date and secure.",
+    "serviceImg": "https://cdn2.iconfinder.com/data/icons/e-commerce-278/512/customer-review-popular-customer-64.png"
+  },
+  {
+    "id": 6,
+    "service": "Cross-Browser Compatibility Testing",
+    "description": "Ensure websites work consistently across various web browsers such as Chrome, Firefox, Safari, and Edge. Identify and fix compatibility issues for a smooth user experience.",
+    "serviceImg": "https://cdn4.iconfinder.com/data/icons/modern-technologies-1/32/technology_TDD_testing_laptop-64.png"
   }
 ]
