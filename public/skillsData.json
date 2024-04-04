@@ -1,0 +1,104 @@
+{
+  "front-end": [
+    {
+      "id": 1,
+      "description": "HTML is the standard markup language for creating web pages.",
+      "experience": "Intermediate",
+      "covered": 90,
+      "image": "html.png",
+      "title": "HTML"
+    },
+    {
+      "id": 2,
+      "description": "CSS is a stylesheet language used to describe the presentation of a document written in HTML.",
+      "experience": "Intermediate",
+      "covered": 85,
+      "image": "css.png",
+      "title": "CSS"
+    },
+    {
+      "id": 3,
+      "description": "Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.",
+      "experience": "Intermediate",
+      "covered": 85,
+      "image": "tailwind-css.png",
+      "title": "Tailwind CSS"
+    },
+    {
+      "id": 4,
+      "description": "Bootstrap is a popular CSS framework for developing responsive and mobile-first websites.",
+      "experience": "Intermediate",
+      "covered": 85,
+      "image": "bootstrap.png",
+      "title": "Bootstrap"
+    },
+    {
+      "id": 5,
+      "description": "JavaScript is a programming language that enables interactive web pages.",
+      "experience": "Intermediate",
+      "covered": 80,
+      "image": "javascript.png",
+      "title": "JavaScript"
+    },
+    {
+      "id": 6,
+      "description": "React.js is a JavaScript library for building user interfaces.",
+      "experience": "Intermediate",
+      "covered": 85,
+      "image": "react.png",
+      "title": "React.js"
+    },
+    {
+      "id": 7,
+      "description": "Redux is a predictable state container for JavaScript apps.",
+      "experience": "Intermediate",
+      "covered": 75,
+      "image": "redux.png",
+      "title": "Redux"
+    },
+    {
+      "id": 8,
+      "description": "TypeScript is a superset of JavaScript that adds optional static typing.",
+      "experience": "Intermediate",
+      "covered": 75,
+      "image": "typescript.png",
+      "title": "TypeScript"
+    }
+  ],
+  "back-end": [
+    {
+      "id": 9,
+      "description": "Express.js is a web application framework for Node.js.",
+      "experience": "Intermediate",
+      "covered": 70,
+      "image": "express.png",
+      "title": "Express.js"
+    },
+    {
+      "id": 10,
+      "description": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+      "experience": "Intermediate",
+      "covered": 70,
+      "image": "nodejs.png",
+      "title": "Node.js"
+    },
+    {
+      "id": 11,
+      "description": "MongoDB is a NoSQL database program.",
+      "experience": "Intermediate",
+      "covered": 70,
+      "image": "mongodb.png",
+      "title": "MongoDB"
+    }
+  ],
+  "version-control": [
+    {
+      "id": 12,
+      "description": "GitHub is a platform for hosting and collaborating on Git repositories.",
+      "experience": "Intermediate",
+      "covered": 80,
+      "image": "github.png",
+      "title": "GitHub"
+    }
+  ]
+}

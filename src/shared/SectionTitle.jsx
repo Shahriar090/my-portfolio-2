@@ -2,12 +2,12 @@ import PropTypes from "prop-types";
 
 const SectionTitle = ({ heading, subHeading }) => {
   return (
-    <div className="py-20 text-start sm:text-center ">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#FF5D56] uppercase ">
+    <div className="pb-24 text-center">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#ff5d56] uppercase font-berkshire-swash">
         {heading}
       </h1>
 
-      <h4 className="text-lg sm:text-xl font-medium text-gray-400">
+      <h4 className="text-lg sm:text-xl font-medium text-[#707070]">
         {subHeading}
       </h4>
     </div>

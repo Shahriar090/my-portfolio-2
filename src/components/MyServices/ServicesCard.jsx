@@ -1,9 +1,11 @@
+import PropTypes from "prop-types";
+
 const ServicesCard = ({ data }) => {
   const { service, description, serviceImg } = data;
   return (
-    <div className="w-full bg-[#222222] p-4 rounded-md border border-[#333] cursor-pointer hover:border-[#FF5D56] transition-all duration-500">
-      <div className="service-container">
-        <div className="img h-20 w-20 mx-auto mt-10">
+    <div className="w-full p-2 bg-[#222222]  rounded-md border border-[#333] cursor-pointer hover:border-[#FF5D56] transition-all duration-500">
+      <div className="service-container w-full h-full mt-8">
+        <div className="img h-20 w-20 mx-auto">
           <img
             src={serviceImg}
             alt="Service Image"
@@ -14,13 +16,22 @@ const ServicesCard = ({ data }) => {
           <h2 className="text-[#F1FFFF] text-xl font-bold capitalize">
             {service}
           </h2>
-          <p className="text-[#707070] text-[16px] pt-6 text-center">
+          <p className="text-[#707070] text-[16px] pt-6 text-center max-w-sm">
             {description}
           </p>
         </div>
       </div>
     </div>
   );
+};
+
+// props validation
+ServicesCard.propTypes = {
+  data: PropTypes.shape({
+    service: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    serviceImg: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default ServicesCard;

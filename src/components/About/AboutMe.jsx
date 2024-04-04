@@ -28,16 +28,17 @@ const AboutMe = () => {
 
               <p className="text-[#707070] font-medium max-w-lg sm:max-w-2xl text-[16px]">
                 From Chittagong, Bangladesh, I am a React Js and Front End Web
-                Developer with a passion for crafting flawless
-                websites.Let&apos;s chat about turning your digital dreams into
-                a reality.
+                Developer with a passion for crafting flawless websites.
               </p>
               <p className="text-[#707070] font-medium max-w-lg sm:max-w-2xl text-[16px]">
                 My focus is on achieving 100% client satisfaction. I find joy in
                 working with JavaScript and React Js, and I also have a basic
-                understanding of Node Js, Express Js, and MongoDB . Let&apos;s
-                connect and explore how we can collaborate for remarkable
-                digital experiences.
+                understanding of{" "}
+                <span className="text-gray-400">
+                  Node Js, Express Js, and MongoDB{" "}
+                </span>
+                . Let&apos;s connect and explore how we can collaborate for
+                remarkable digital experiences.
               </p>
 
               <div className="info grid grid-cols-1 lg:grid-cols-2 gap-3">
