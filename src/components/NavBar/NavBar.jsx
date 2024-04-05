@@ -23,7 +23,7 @@ const NavBar = () => {
             {navItems.map((item, index) => (
               <li
                 key={index}
-                className="text-lg font-medium text-gray-200 hover:text-[#FF5D56] transition-all duration-300"
+                className="text-lg font-medium uppercase text-gray-200 hover:text-[#FF5D56] transition-all duration-300"
               >
                 <a href={item.href}>{item.label}</a>
               </li>
