@@ -15,7 +15,7 @@ const AboutMe = () => {
               <img
                 src={myImg}
                 alt="My Image"
-                className="w-full lg:mx-auto rounded-sm"
+                className="w-full lg:mx-auto rounded-sm opacity-75"
               />
             </picture>
           </div>
