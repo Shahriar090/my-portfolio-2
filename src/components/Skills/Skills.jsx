@@ -10,8 +10,9 @@ const Skills = () => {
     { type: "TailwindCSS", level: 80 },
     { type: "Bootstrap", level: 80 },
     { type: "Javascript", level: 75 },
+    { type: "TypeScript", level: 60 },
     { type: "React Js", level: 80 },
-    { type: "Redux", level: 70 },
+    { type: "Redux", level: 60 },
   ];
 
   const backEndSkills = [
