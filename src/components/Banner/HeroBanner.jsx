@@ -1,5 +1,5 @@
 import { IoIosArrowForward } from "react-icons/io";
-import heroImg from "../..//assets/sky-bg.png";
+import heroImg from "../..//assets/tech-bg.png";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroBanner = () => {
@@ -11,15 +11,15 @@ const HeroBanner = () => {
           backgroundImage: `url(${heroImg})`,
         }}
       >
-        <div className="overlay  absolute inset-0 bg-black bg-opacity-80"></div>
+        <div className="overlay  absolute inset-0 bg-black bg-opacity-90"></div>
 
-        <div className="content absolute text-center top-[30%] sm:top-[35%] left-[0%] md:left-[8%] transform translate(-50%, -50%)">
+        <div className="content absolute text-center top-[30%] sm:top-[35%] left-[0%] md:left-[20%] lg:left-[25%] xl:left-[32%] transform translate(-50%, -50%)">
           <div className="texts flex flex-col gap-6 pl-2 sm:pl-0">
-            <span className="text-xl sm:text-2xl text-white font-medium capitalize text-start ">
+            <span className="text-xl sm:text-2xl text-white font-medium capitalize text-start md:text-center">
               Hey There, I am
             </span>
             {/* type  animation start*/}
-            <div className="text-start ">
+            <div className="text-start md:text-center">
               <TypeAnimation
                 sequence={[
                   " Front End Developer",
@@ -40,13 +40,13 @@ const HeroBanner = () => {
             </div>
             {/* type animation end */}
 
-            <p className="text-[#707070] max-w-lg font-medium text-lg text-start ">
+            <p className="text-[#707070] max-w-lg font-medium text-lg text-start md:text-center">
               From Chittagong, Bangladesh, I am a React Js and Front End Web
               Developer with a passion for crafting flawless websites.Let&apos;s
               chat about turning your digital dreams into a reality.
             </p>
           </div>
-          <div className="mt-6 flex justify-start  pl-2 sm:pl-0">
+          <div className="mt-6 flex justify-start md:justify-center  pl-2 sm:pl-0">
             <button className="group btn-outline">
               Portfolio
               <span className="group-hover:rotate-90 transition-all duration-500">
