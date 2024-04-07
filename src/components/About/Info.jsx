@@ -3,7 +3,7 @@ export const myInfos = [
     id: 1,
     title: "Date OF Birth",
     icon: "https://cdn-icons-png.flaticon.com/128/9795/9795297.png",
-    info: "08-08-2002",
+    info: "08-08-2001",
   },
   {
     id: 2,
