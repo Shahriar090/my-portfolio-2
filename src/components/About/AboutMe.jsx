@@ -22,7 +22,7 @@ const AboutMe = () => {
           <div className="details flex-[2]">
             <div className="flex flex-col gap-5">
               <span className="text-xl text-[#707070] font-medium">I Am</span>
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-300">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-200">
                 Mohammad Shahriar Hossain
               </h1>
 
