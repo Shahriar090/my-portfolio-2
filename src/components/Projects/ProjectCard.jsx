@@ -24,17 +24,19 @@ const ProjectCard = ({ data }) => {
     setShowFullDescription(!showFullDescription);
   };
   return (
-    <div className="w-full bg-[#111111] cursor-pointer rounded-md p-3">
+    <div className="w-full bg-[#222222] cursor-pointer rounded-md p-3">
       <div className="content">
-        <div className="img opacity-70 hover:opacity-100 transition-all duration-300">
+        <h1 className="text-xl font-semibold  text-gray-200  uppercase pb-5">
+          {projectTitle}
+        </h1>
+        <div className="img">
           <img
             src={projectImg}
             alt="Project Image"
-            className="w-full rounded-md"
+            className="w-full  rounded-md"
           />
         </div>
-        <div className=" mt-4">
-          <h1 className="text-xl font-semibold  text-white">{projectTitle}</h1>
+        <div className=" mt-5">
           <button
             className="btn-primary"
             onClick={() => setModal((prev) => !prev)}
