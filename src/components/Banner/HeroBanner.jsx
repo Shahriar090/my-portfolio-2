@@ -30,7 +30,7 @@ const HeroBanner = () => {
                   1000,
                 ]}
                 wrapper="span"
-                speed={50}
+                speed={60}
                 className="inline-block text-2xl sm:text-4xl lg:text-5xl"
                 style={{
                   color: "#FF5D56",
@@ -40,7 +40,7 @@ const HeroBanner = () => {
             </div>
             {/* type animation end */}
 
-            <p className="text-[#707070] max-w-lg font-medium text-lg text-start md:text-center">
+            <p className="text-white max-w-lg font-medium text-lg text-start md:text-center">
               From Chittagong, Bangladesh, I am a React Js and Front End Web
               Developer with a passion for crafting flawless websites.Let&apos;s
               chat about turning your digital dreams into a reality.

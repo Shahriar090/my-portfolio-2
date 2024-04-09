@@ -13,9 +13,7 @@ const ServicesCard = ({ data }) => {
           />
         </div>
         <div className="details text-center pt-6">
-          <h2 className="text-[#F1FFFF] text-xl font-bold capitalize">
-            {service}
-          </h2>
+          <h2 className="text-white text-xl font-bold capitalize">{service}</h2>
           <p className="text-[#707070] text-[16px] pt-6 text-center">
             {description}
           </p>
