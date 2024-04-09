@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "../../ui/Modal";
-
+import PropTypes from "prop-types";
 const ProjectCard = ({ data }) => {
   const {
     projectTitle,
@@ -86,7 +86,15 @@ const ProjectCard = ({ data }) => {
   );
 };
 
+// Prop validation
+ProjectCard.propTypes = {
+  data: PropTypes.shape({
+    projectTitle: PropTypes.string.isRequired,
+    projectImg: PropTypes.string.isRequired,
+    projectDescription: PropTypes.string.isRequired,
+    githubLink: PropTypes.string.isRequired,
+    liveDemo: PropTypes.string.isRequired,
+    usedTools: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+};
 export default ProjectCard;
-
-/*
- */
