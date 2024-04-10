@@ -24,7 +24,7 @@ const Skills = () => {
   const versionControlSkills = [{ type: "Github", level: 70 }];
 
   return (
-    <section className="bg-[#111111]">
+    <section id="skills" className="bg-[#111111]">
       <Container>
         <SectionTitle
           heading="My Skills"

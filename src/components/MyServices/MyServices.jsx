@@ -40,7 +40,7 @@ const MyServices = () => {
     );
   }
   return (
-    <section className="bg-[#151515]">
+    <section id="services" className="bg-[#151515]">
       <Container>
         <SectionTitle heading="My Services" subHeading="Services Details" />
 

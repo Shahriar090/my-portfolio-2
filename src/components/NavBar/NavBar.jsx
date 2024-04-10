@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { navItems } from "./NavItems";
 import { MdMenu, MdClose } from "react-icons/md";
+import { Link } from "react-scroll";
+
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -22,9 +24,11 @@ const NavBar = () => {
             {navItems.map((item, index) => (
               <li
                 key={index}
-                className=" text-lg font-medium text-white hover:text-[#FF5D56] transition-all duration-300"
+                className=" text-lg font-medium text-white hover:text-[#FF5D56] transition-all duration-300 cursor-pointer"
               >
-                <a href={item.href}>{item.label}</a>
+                <Link to={item.link} smooth duration={500}>
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -49,7 +53,14 @@ const NavBar = () => {
                       key={index}
                       className="text-lg font-medium uppercase text-white hover:text-gray-300 transition-all duration-300"
                     >
-                      <a href={item.href}>{item.label}</a>
+                      <Link
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        to={item.link}
+                        smooth
+                        duration={500}
+                      >
+                        {item.label}
+                      </Link>
                     </li>
                   ))}
                 </ul>

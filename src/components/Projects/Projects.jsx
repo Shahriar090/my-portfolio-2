@@ -26,7 +26,7 @@ const Projects = () => {
     fetchData();
   }, []);
   return (
-    <section className="bg-[#151515]">
+    <section id="projects" className="bg-[#151515]">
       <Container>
         <SectionTitle heading="Portfolio" subHeading="My Recent Works" />
 

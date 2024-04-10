@@ -5,7 +5,7 @@ import { myInfos } from "./Info";
 
 const AboutMe = () => {
   return (
-    <section className="bg-[#111111]">
+    <section id="about" className="bg-[#111111]">
       {/* main content start */}
       <Container>
         <SectionTitle heading="About Me" subHeading="Personal Details" />

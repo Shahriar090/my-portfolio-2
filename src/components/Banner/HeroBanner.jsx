@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroBanner = () => {
   return (
-    <section className="bg-black">
+    <section id="home" className="bg-black">
       <div
         className="relative  w-full max-w-screen-2xl mx-auto  h-screen bg-no-repeat  bg-center bg-cover"
         style={{
