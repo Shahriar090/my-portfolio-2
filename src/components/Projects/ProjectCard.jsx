@@ -24,11 +24,11 @@ const ProjectCard = ({ data }) => {
     setShowFullDescription(!showFullDescription);
   };
   return (
-    <div className="w-full bg-[#222222] cursor-pointer rounded-md p-3">
-      <div className="content">
-        <h1 className="text-xl font-semibold  text-gray-200  uppercase pb-5">
+    <div className="w-full bg-[#222222] overflow-hidden cursor-pointer rounded-md">
+      <div className=" content p-2">
+        {/* <h1 className="text-xl font-semibold  text-white   uppercase pb-5">
           {projectTitle}
-        </h1>
+        </h1> */}
         <div className="img">
           <img
             src={projectImg}
@@ -36,7 +36,7 @@ const ProjectCard = ({ data }) => {
             className="w-full  rounded-md"
           />
         </div>
-        <div className=" mt-5">
+        <div className="mt-4">
           <button
             className="btn-primary"
             onClick={() => setModal((prev) => !prev)}

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { navItems } from "./NavItems";
 import { MdMenu, MdClose } from "react-icons/md";
-
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -23,7 +22,7 @@ const NavBar = () => {
             {navItems.map((item, index) => (
               <li
                 key={index}
-                className="text-lg font-medium text-white hover:text-[#FF5D56] transition-all duration-300"
+                className=" text-lg font-medium text-white hover:text-[#FF5D56] transition-all duration-300"
               >
                 <a href={item.href}>{item.label}</a>
               </li>
