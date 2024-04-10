@@ -6,17 +6,17 @@ const HeroBanner = () => {
   return (
     <section className="bg-black">
       <div
-        className="relative w-full max-w-screen-2xl mx-auto  h-screen bg-no-repeat  bg-center bg-cover"
+        className="relative  w-full max-w-screen-2xl mx-auto  h-screen bg-no-repeat  bg-center bg-cover"
         style={{
           backgroundImage: `url(${heroImg})`,
         }}
       >
-        <div className="overlay  absolute inset-0 bg-black bg-opacity-90"></div>
+        <div className="overlay  absolute inset-0 bg-black bg-opacity-95"></div>
 
         <div className="content absolute text-center top-[30%] sm:top-[35%] left-[0%] md:left-[20%] lg:left-[25%] xl:left-[32%] transform translate(-50%, -50%)">
           <div className="texts flex flex-col gap-6 pl-2 sm:pl-0">
             <span className="text-xl sm:text-2xl text-white font-medium capitalize text-start md:text-center">
-              Hey There, I am
+              Hi There, I am
             </span>
             {/* type  animation start*/}
             <div className="text-start md:text-center">
@@ -40,7 +40,7 @@ const HeroBanner = () => {
             </div>
             {/* type animation end */}
 
-            <p className="text-white max-w-lg font-medium text-lg text-start md:text-center">
+            <p className="text-white max-w-lg  text-lg text-start md:text-center">
               From Chittagong, Bangladesh, I am a React Js and Front End Web
               Developer with a passion for crafting flawless websites.Let&apos;s
               chat about turning your digital dreams into a reality.

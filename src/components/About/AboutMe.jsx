@@ -8,7 +8,7 @@ const AboutMe = () => {
     <section className="bg-[#111111]">
       {/* main content start */}
       <Container>
-        <SectionTitle heading="About Me" subHeading="Details About Me" />
+        <SectionTitle heading="About Me" subHeading="Personal Details" />
         <div className=" flex flex-col-reverse md:flex-row gap-10 ">
           <div className="image flex-[1]">
             <picture>
@@ -22,15 +22,15 @@ const AboutMe = () => {
           <div className="details flex-[2]">
             <div className="flex flex-col gap-5">
               <span className="text-xl text-[#707070] font-medium">I Am</span>
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white">
+              <h1 className="text-2xl md:text-3xl  font-semibold text-white">
                 Mohammad Shahriar Hossain
               </h1>
 
-              <p className="text-[#707070] font-medium max-w-lg sm:max-w-2xl text-[16px]">
+              <p className="text-[#707070]  max-w-lg sm:max-w-2xl text-[16px]">
                 From Chittagong, Bangladesh, I am a React Js and Front End Web
                 Developer with a passion for crafting flawless websites.
               </p>
-              <p className="text-[#707070] font-medium max-w-lg sm:max-w-2xl text-[16px]">
+              <p className="text-[#707070]  max-w-lg sm:max-w-2xl text-[16px]">
                 My focus is on achieving 100% client satisfaction. I find joy in
                 working with JavaScript and React Js, and I also have a basic
                 understanding of{" "}

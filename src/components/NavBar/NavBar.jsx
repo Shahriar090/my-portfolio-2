@@ -9,7 +9,7 @@ const NavBar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <header className="w-full h-16 bg-black fixed top-0 left-0 right-0 z-50 ">
+    <header className="w-full h-20 bg-black bg-opacity-80 fixed top-0 left-0 right-0 z-50 ">
       <nav className="nav-container w-full h-full max-w-screen-xl mx-auto flex items-center justify-between px-2 ">
         <div className="logo">
           <h1 className="text-2xl md:text-3xl  text-white capitalize font-berkshire-swash">
@@ -42,7 +42,7 @@ const NavBar = () => {
 
           {/* drawer item */}
           {isMobileMenuOpen && (
-            <div className="fixed top-16 right-0 z-20 w-full h-screen bg-gray-950 p-10 flex justify-end items-start">
+            <div className="fixed top-16 right-0 z-20 w-full h-screen bg-black bg-opacity-80 p-10 flex justify-end items-start">
               <div className="items">
                 <ul className="space-y-5">
                   {navItems.map((item, index) => (
