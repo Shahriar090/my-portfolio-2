@@ -20,21 +20,19 @@ const AboutMe = () => {
             </picture>
           </div>
           <div className="details flex-[2]">
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-4">
               <span className="text-xl text-[#707070] font-medium">I Am</span>
               <h1 className="text-2xl md:text-3xl  font-semibold text-white">
                 Mohammad Shahriar Hossain
               </h1>
 
-              <p className="text-[#707070]  max-w-lg sm:max-w-2xl text-[16px]">
+              <p className="text-[#707070]  max-w-lg sm:max-w-2xl text-lg">
                 From Chittagong, Bangladesh, I am a React Js and Front End Web
-                Developer with a passion for crafting flawless websites.
-              </p>
-              <p className="text-[#707070]  max-w-lg sm:max-w-2xl text-[16px]">
-                My focus is on achieving 100% client satisfaction. I find joy in
-                working with JavaScript and React Js, and I also have a basic
-                understanding of{" "}
-                <span className="text-gray-400">
+                Developer with a passion for crafting flawless websites. My
+                focus is on achieving 100% client satisfaction.
+                <br />I find joy in working with JavaScript and React Js, and I
+                also have a basic understanding of{" "}
+                <span className="font-semibold italic">
                   Node Js, Express Js, and MongoDB{" "}
                 </span>
                 . Let&apos;s connect and explore how we can collaborate for
@@ -49,10 +47,10 @@ const AboutMe = () => {
                         <img
                           src={info.icon}
                           alt="Info Img"
-                          className="bg-[#FF5D56] p-1 rounded-md"
+                          className="bg-[#FF5D56] p-1.5 rounded-md"
                         />
                       </div>
-                      <div className="text-[#707070]">
+                      <div className="text-[#707070] text-lg">
                         <p>
                           <span className="font-semibold text-[#707070]">
                             {" "}
