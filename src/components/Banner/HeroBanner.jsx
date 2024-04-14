@@ -1,6 +1,7 @@
 import { IoIosArrowForward } from "react-icons/io";
 import heroImg from "../..//assets/tech-bg.png";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-scroll";
 
 const HeroBanner = () => {
   return (
@@ -47,12 +48,14 @@ const HeroBanner = () => {
             </p>
           </div>
           <div className="mt-6 flex justify-start md:justify-center  pl-2 sm:pl-0">
-            <button className="group btn-outline">
-              Portfolio
-              <span className="group-hover:rotate-90 transition-all duration-500">
-                <IoIosArrowForward className="text-lg ml-1" />
-              </span>
-            </button>
+            <Link to="projects" smooth duration={500}>
+              <button className="group btn-outline">
+                Portfolio
+                <span className="group-hover:rotate-90 transition-all duration-500">
+                  <IoIosArrowForward className="text-lg ml-1" />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
