@@ -22,7 +22,7 @@ const AboutMe = () => {
           <div className="details flex-[2]">
             <div className="flex flex-col gap-4">
               <span className="text-xl text-[#707070] font-medium">I Am</span>
-              <h1 className="text-2xl md:text-3xl  font-semibold text-white">
+              <h1 className="text-2xl md:text-3xl  font-bold text-white">
                 Mohammad Shahriar Hossain
               </h1>
 
@@ -32,7 +32,7 @@ const AboutMe = () => {
                 focus is on achieving 100% client satisfaction.
                 <br />I find joy in working with JavaScript and React Js, and I
                 also have a basic understanding of{" "}
-                <span className="font-semibold italic">
+                <span className="font-semibold">
                   Node Js, Express Js, and MongoDB{" "}
                 </span>
                 . Let&apos;s connect and explore how we can collaborate for

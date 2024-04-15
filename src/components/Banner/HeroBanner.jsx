@@ -1,5 +1,5 @@
 import { IoIosArrowForward } from "react-icons/io";
-import heroImg from "../..//assets/tech-bg.png";
+import heroImg from "../../assets/black-bg.png";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-scroll";
 
@@ -7,12 +7,12 @@ const HeroBanner = () => {
   return (
     <section id="home" className="bg-black">
       <div
-        className="relative  w-full max-w-screen-2xl mx-auto  h-screen bg-no-repeat  bg-center bg-cover"
+        className="relative  w-full max-w-screen-2xl mx-auto  h-screen bg-no-repeat  bg-center bg-cover bg-fixed"
         style={{
           backgroundImage: `url(${heroImg})`,
         }}
       >
-        <div className="overlay  absolute inset-0 bg-black bg-opacity-90"></div>
+        <div className="overlay  absolute inset-0 bg-black bg-opacity-60"></div>
 
         <div className="content absolute text-center top-[30%] sm:top-[35%] left-[0%] md:left-[20%] lg:left-[25%] xl:left-[32%] transform translate(-50%, -50%)">
           <div className="texts flex flex-col gap-6 pl-2 sm:pl-0">
