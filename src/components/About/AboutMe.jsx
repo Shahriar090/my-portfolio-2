@@ -9,13 +9,13 @@ const AboutMe = () => {
       {/* main content start */}
       <Container>
         <SectionTitle heading="About Me" subHeading="Personal Details" />
-        <div className=" flex flex-col-reverse md:flex-row gap-10 ">
+        <div className=" flex flex-col-reverse md:flex-row items-center gap-10 ">
           <div className="image flex-[1]">
             <picture>
               <img
                 src={myImg}
                 alt="My Image"
-                className="w-full lg:mx-auto rounded-sm opacity-75"
+                className="w-full  rounded-sm opacity-75"
               />
             </picture>
           </div>
