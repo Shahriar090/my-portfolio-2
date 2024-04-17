@@ -1,5 +1,5 @@
 import { IoIosArrowForward } from "react-icons/io";
-import heroImg from "../../assets/black-bg.png";
+import heroImg from "../../assets/sky-bg.png";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-scroll";
 
