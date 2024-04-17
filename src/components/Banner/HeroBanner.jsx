@@ -12,7 +12,7 @@ const HeroBanner = () => {
           backgroundImage: `url(${heroImg})`,
         }}
       >
-        <div className="overlay  absolute inset-0 bg-black bg-opacity-20"></div>
+        {/* <div className="overlay  absolute inset-0 bg-black bg-opacity-20"></div> */}
 
         <div className="content absolute top-[30%]  md:left-[25%] md:right-[25%] transform translate(-50%, -50%)">
           <div className="texts flex flex-col gap-6 pl-2 md:pl-0">
