@@ -13,6 +13,11 @@ body {
   list-style: none;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
 @layer components {
   .btn-primary {
     @apply px-8 py-3;
