@@ -10,10 +10,10 @@ const NavBar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <header className="w-full h-20 bg-black bg-opacity-80 fixed top-0 left-0 right-0 z-50 ">
+    <header className="w-full h-20 bg-black bg-opacity-30 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 ">
       <nav className="nav-container w-full h-full max-w-screen-xl mx-auto flex items-center justify-between px-2 ">
         <div className="logo">
-          <h1 className="text-2xl md:text-3xl  text-white capitalize font-berkshire-swash">
+          <h1 className="text-2xl md:text-4xl  text-white capitalize font-berkshire-swash">
             <a href="#">
               Shahriar <span className="text-[#FF5D56]">Hossain</span>
             </a>
@@ -24,7 +24,7 @@ const NavBar = () => {
             {navItems.map((item, index) => (
               <li
                 key={index}
-                className=" text-lg font-medium text-white hover:text-[#FF5D56] transition-all duration-300 cursor-pointer"
+                className=" text-[16px] uppercase text-white hover:text-[#FF5D56] transition-all duration-300 cursor-pointer"
               >
                 <Link to={item.link} smooth duration={500}>
                   {item.label}

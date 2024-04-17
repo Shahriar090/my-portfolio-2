@@ -15,23 +15,27 @@ const AboutMe = () => {
               <img
                 src={myImg}
                 alt="My Image"
-                className="w-full  rounded-sm opacity-75"
+                className="w-full rounded-md opacity-75"
               />
             </picture>
           </div>
           <div className="details flex-[2]">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-5">
               <span className="text-xl text-[#707070] font-medium">I Am</span>
               <h1 className="text-2xl md:text-3xl  font-bold text-white">
                 Mohammad Shahriar Hossain
               </h1>
 
-              <p className="text-[#707070]  max-w-lg sm:max-w-2xl text-lg">
+              <p className="text-[#707070]  max-w-lg sm:max-w-2xl text-[16px]">
                 From Chittagong, Bangladesh, I am a React Js and Front End Web
                 Developer with a passion for crafting flawless websites. My
                 focus is on achieving 100% client satisfaction.
-                <br />I find joy in working with JavaScript and React Js, and I
-                also have a basic understanding of{" "}
+              </p>
+
+              <p className="text-[#707070]  max-w-lg sm:max-w-2xl text-[16px]">
+                {" "}
+                I find joy in working with JavaScript and React Js, and I also
+                have a basic understanding of{" "}
                 <span className="font-semibold">
                   Node Js, Express Js, and MongoDB{" "}
                 </span>
@@ -39,18 +43,18 @@ const AboutMe = () => {
                 remarkable digital experiences.
               </p>
 
-              <div className="info grid grid-cols-1 lg:grid-cols-2 gap-3">
+              <div className="info grid grid-cols-1 lg:grid-cols-2 gap-2 sm:max-w-2xl">
                 {myInfos.map((info) => (
                   <div key={info.id}>
                     <div className="info-container flex items-center gap-4">
-                      <div className="icons w-7 h-7">
+                      <div className="icons">
                         <img
                           src={info.icon}
                           alt="Info Img"
-                          className="bg-[#FF5D56] p-1.5 rounded-md"
+                          className="bg-[#FF5D56] w-7 h-7 p-1.5 rounded-md"
                         />
                       </div>
-                      <div className="text-[#707070] text-lg">
+                      <div className="text-[#707070] text-[16px]">
                         <p>
                           <span className="font-semibold text-[#707070]">
                             {" "}
