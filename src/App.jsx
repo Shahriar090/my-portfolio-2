@@ -1,5 +1,6 @@
 import AboutMe from "./components/About/AboutMe";
 import HeroBanner from "./components/Banner/HeroBanner";
+import Contact from "./components/Contact/Contact";
 import MyServices from "./components/MyServices/MyServices";
 import NavBar from "./components/NavBar/NavBar";
 import Projects from "./components/Projects/Projects";
@@ -16,6 +17,7 @@ function App() {
       <MyServices />
       <Skills />
       <Projects />
+      <Contact />
     </>
   );
 }

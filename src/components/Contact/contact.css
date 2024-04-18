@@ -1,0 +1,6 @@
+@tailwind base;
+@layer base {
+  .form-input {
+    @apply w-full border border-[#333] text-[#fff] rounded-sm px-[14px] py-[20px] bg-[#222];
+  }
+}
