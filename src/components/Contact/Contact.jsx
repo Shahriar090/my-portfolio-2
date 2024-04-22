@@ -1,8 +1,38 @@
+import { useRef } from "react";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import "./contact.css";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+  /* 
+  service id - service_2nnlexb
+  public key - E9LXZxPlYpHSSOFlB
+  template id - template_y234grq
+  */
+
+  // email js function
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_2nnlexb",
+        "template_y234grq",
+        form.current,
+        "E9LXZxPlYpHSSOFlB"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <section id="contact" className="bg-[#111111]">
       <Container>
@@ -13,12 +43,16 @@ const Contact = () => {
 
         {/* main section */}
         <section className="flex items-center justify-center">
-          <form className="flex flex-col gap-5 w-full md:max-w-3xl">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex flex-col gap-5 w-full md:max-w-3xl"
+          >
             <div className="name-email flex flex-col lg:flex-row gap-5 items-center">
               <div className="name w-full">
                 <input
                   type="text"
-                  name="text"
+                  name="name"
                   id="text"
                   placeholder="Your Name"
                   className="form-input"
@@ -53,7 +87,7 @@ const Contact = () => {
                 className="form-input"
               ></textarea>
             </div>
-            <div className="submit-btn flex justify-center">
+            <div type="submit" className="submit-btn flex justify-center">
               <button className="btn-outline text-[#ff5d56] border-[#ff5d56] hover:bg-[#ff5d56] hover:text-white">
                 Contact Now
               </button>

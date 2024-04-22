@@ -3,7 +3,7 @@ import Container from "../../shared/Container";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <section className="bg-[#111111]">
+    <section className="bg-[#111111] border-t-2 border-[#333]">
       <Container>
         <footer>
           <aside className="flex justify-center">
