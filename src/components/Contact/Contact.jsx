@@ -59,7 +59,13 @@ const Contact = () => {
                   id="text"
                   placeholder="Your Name"
                   className="form-input"
-                  {...register("name", { required: "Name Is Required" })}
+                  {...register("name", {
+                    required: "Name Is Required",
+                    minLength: {
+                      value: 4,
+                      message: "Name Must Be At Least 4 Characters",
+                    },
+                  })}
                 />
                 {errors.name && (
                   <span className="text-red-600">{errors.name.message}</span>
@@ -72,7 +78,13 @@ const Contact = () => {
                   id="email"
                   placeholder="Your Email"
                   className="form-input"
-                  {...register("email", { required: "Email is required" })}
+                  {...register("email", {
+                    required: "Email is required",
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      message: "Invalid email address",
+                    },
+                  })}
                 />
                 {errors.email && (
                   <span className="text-red-600">{errors.email.message}</span>
@@ -86,7 +98,13 @@ const Contact = () => {
                 name="subject"
                 placeholder="Subject"
                 className="form-input"
-                {...register("subject", { required: "Subject is required" })}
+                {...register("subject", {
+                  required: "Subject is required",
+                  minLength: {
+                    value: 4,
+                    message: "Subject Must Be At Least 4 Characters",
+                  },
+                })}
               />
               {errors.subject && (
                 <span className="text-red-600">{errors.subject.message}</span>
@@ -100,7 +118,13 @@ const Contact = () => {
                 cols="20"
                 rows="5"
                 className="form-input"
-                {...register("message", { required: "Message is required" })}
+                {...register("message", {
+                  required: "Message is required",
+                  minLength: {
+                    value: 10,
+                    message: "Message Must Be At Least 10 Characters",
+                  },
+                })}
               ></textarea>
               {errors.message && (
                 <span className="text-red-600">{errors.message.message}</span>
