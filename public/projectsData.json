@@ -30,7 +30,7 @@
   {
     "id": 3,
     "projectTitle": "My Portfolio",
-    "projectImg": "https://i.ibb.co/NmkxK63/my-portfolio-img.png",
+    "projectImg": "https://i.ibb.co/nCjm402/Screenshot-2024-04-23-204025.png",
     "projectDescription": "This is my personal portfolio website, where I showcase my work and demonstrate my expertise in front-end development. As a dedicated front-end developer, I am committed to staying abreast of industry trends and continuously learning new technologies. By embracing best practices such as creating reusable components and maintaining clean code, I strive to deliver high-quality projects. Currently, I am focused on expanding my skill set to encompass full-stack development using the MERN stack. I approach each project with enthusiasm and a drive to refine my abilities, ensuring that my work remains innovative and competitive in today's dynamic tech landscape.",
     "usedTools": [
       "React JS",

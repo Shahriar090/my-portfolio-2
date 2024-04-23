@@ -8,6 +8,9 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import SocialLinks from "./components/SocialLinks/SocialLinks";
 
+// react toastify
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <>
@@ -20,6 +23,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <ToastContainer />
     </>
   );
 }
