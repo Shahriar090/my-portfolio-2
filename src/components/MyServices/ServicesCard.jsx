@@ -16,7 +16,7 @@ const ServicesCard = ({ data }) => {
           <h2 className="text-white text-xl font-medium capitalize py-3">
             {service}
           </h2>
-          <p className="text-[#707070] text-[16px]  text-center">
+          <p className="text-[#707070] text-[16px]  text-center font-medium">
             {description}
           </p>
         </div>
