@@ -9,7 +9,7 @@ const Skills = () => {
     { type: "CSS", level: 80 },
     { type: "TailwindCSS", level: 80 },
     { type: "Bootstrap", level: 80 },
-    { type: "Javascript", level: 75 },
+    { type: "JavaScript", level: 75 },
     { type: "TypeScript", level: 60 },
     { type: "React Js", level: 80 },
     { type: "Redux", level: 60 },
@@ -33,8 +33,8 @@ const Skills = () => {
 
         <section className="all-skills grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {/* Front-end skills */}
-          <section className="p-3 bg-[#222222] rounded-md ">
-            <h2 className="text-xl font-semibold text-white pb-3">Front-end</h2>
+          <div className="p-5 bg-[#222222] rounded-sm">
+            <h2 className="text-xl font-medium text-white pb-3">Front-end</h2>
             <SkillBar
               skills={frontEndSkills}
               colors={{
@@ -43,11 +43,11 @@ const Skills = () => {
               }}
               height={"25px"}
             />
-          </section>
+          </div>
 
           {/* Back-end skills */}
-          <section className="p-3 bg-[#222222] rounded-md ">
-            <h2 className="text-xl font-semibold text-white pb-3">Back-end</h2>
+          <div className="p-5 bg-[#222222] rounded-sm">
+            <h2 className="text-xl font-medium text-white pb-3">Back-end</h2>
             <SkillBar
               skills={backEndSkills}
               colors={{
@@ -56,11 +56,11 @@ const Skills = () => {
               }}
               height={"25px"}
             />
-          </section>
+          </div>
 
           {/* Version control skills */}
-          <section className="p-3 bg-[#222222] rounded-md">
-            <h2 className="text-xl font-semibold text-white pb-3">
+          <div className="p-5 bg-[#222222] rounded-sm">
+            <h2 className="text-xl font-medium text-white pb-3">
               Version Control
             </h2>
             <SkillBar
@@ -71,7 +71,7 @@ const Skills = () => {
               }}
               height={"25px"}
             />
-          </section>
+          </div>
         </section>
       </Container>
     </section>

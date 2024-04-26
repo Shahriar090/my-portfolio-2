@@ -25,14 +25,16 @@ const AboutMe = () => {
               <h1 className="text-2xl md:text-3xl  font-medium text-white">
                 Mohammad Shahriar Hossain
               </h1>
+              {/* bar div */}
+              <div className="w-10 h-1 rounded-md bg-[#FF5D56]"></div>
 
-              <p className="text-[#707070]  max-w-lg sm:max-w-2xl text-[16px]">
+              <p className="text-[#707070]  max-w-lg sm:max-w-2xl text-[16px] font-medium">
                 From Chittagong, Bangladesh, I am a React Js and Front End Web
                 Developer with a passion for crafting flawless websites. My
                 focus is on achieving 100% client satisfaction.
               </p>
 
-              <p className="text-[#707070]  max-w-lg sm:max-w-2xl text-[16px]">
+              <p className="text-[#707070]  max-w-lg sm:max-w-2xl text-[16px] font-medium">
                 {" "}
                 I find joy in working with JavaScript and React Js, and I also
                 have a basic understanding of{" "}
