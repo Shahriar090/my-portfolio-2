@@ -45,16 +45,20 @@ const AboutMe = () => {
                 remarkable digital experiences.
               </p>
 
-              <div className="info grid grid-cols-1 lg:grid-cols-2 gap-2 sm:max-w-2xl">
+              <div className="info grid grid-cols-1 lg:grid-cols-2 gap-3 sm:max-w-2xl">
                 {myInfos.map((info) => (
                   <div key={info.id}>
-                    <div className="info-container flex items-center gap-4">
+                    <div className="info-container flex items-center gap-3">
                       <div className="icons">
-                        <img
-                          src={info.icon}
-                          alt="Info Img"
-                          className="bg-[#FF5D56] w-7 h-7 p-1.5 rounded-md"
-                        />
+                        {typeof info.icon === "string" ? (
+                          <img
+                            src={info.icon}
+                            alt="Info Img"
+                            className="bg-[#FF5D56] w-7 h-7 p-1.5 rounded-md"
+                          />
+                        ) : (
+                          info.icon
+                        )}
                       </div>
                       <div className="text-[#707070] text-[16px]">
                         <p>
