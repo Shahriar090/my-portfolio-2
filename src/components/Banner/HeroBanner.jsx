@@ -7,7 +7,7 @@ const HeroBanner = () => {
   return (
     <section id="home" className="bg-black">
       <div
-        className="relative  w-full max-w-screen-2xl mx-auto  h-screen bg-no-repeat  bg-center bg-cover"
+        className="relative  w-full h-screen bg-no-repeat  bg-center bg-cover"
         style={{
           backgroundImage: `url(${heroImg})`,
         }}
