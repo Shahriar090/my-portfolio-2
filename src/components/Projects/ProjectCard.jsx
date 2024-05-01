@@ -62,7 +62,7 @@ const ProjectCard = ({ data }) => {
                 </button>
               )}
               <div className="tools h-[160px] pt-5">
-                <span className="font-medium text-[20px] text-gray-200">
+                <span className="font-medium text-[20px] text-[#FF5D56]">
                   Used Tools
                 </span>
                 {usedTools.map((item, index) => (

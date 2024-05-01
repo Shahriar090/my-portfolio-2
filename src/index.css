@@ -23,7 +23,7 @@ html {
     @apply px-8 py-3;
     @apply inline-flex items-center justify-center;
     @apply rounded-sm bg-black  text-white;
-    @apply hover:bg-gray-950 transition-all duration-300;
+    @apply hover:bg-[#FF5D56];
     @apply transition-all duration-500;
   }
 
@@ -37,7 +37,7 @@ html {
   .btn-sm {
     @apply px-3 py-1;
     @apply inline-flex items-center justify-center;
-    @apply rounded-sm border  border-white text-white;
+    @apply border border-[#333] rounded-md text-white;
     @apply hover:border-[#FF5D56] hover:text-[#FF5D56];
     @apply transition-all duration-500;
   }
