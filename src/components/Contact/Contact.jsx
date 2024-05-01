@@ -130,7 +130,7 @@ const Contact = () => {
                 <span className="text-red-600">{errors.message.message}</span>
               )}
             </div>
-            <div className="submit-btn flex justify-center">
+            <div className="submit-btn flex justify-center mt-5">
               <button
                 type="submit"
                 className="btn-outline text-[#ff5d56] border-[#ff5d56] hover:bg-[#ff5d56] hover:text-white"

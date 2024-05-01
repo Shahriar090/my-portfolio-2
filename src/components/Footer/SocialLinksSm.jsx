@@ -1,11 +1,11 @@
-import { FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoIosMail } from "react-icons/io";
-import { SiGoogledocs } from "react-icons/si";
-
+// refactor icons
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { MdAlternateEmail } from "react-icons/md";
+import { IoNewspaperOutline } from "react-icons/io5";
 export const links = [
   {
     id: 1,
-    child: <FaLinkedin className="text-2xl" />,
+    child: <FaLinkedinIn className="text-2xl" />,
     href: "https://www.linkedin.com/in/shahriar-hossain-890baa280/",
   },
   {
@@ -22,13 +22,13 @@ export const links = [
   },
   {
     id: 4,
-    child: <IoIosMail className="text-2xl" />,
+    child: <MdAlternateEmail className="text-2xl" />,
 
     href: "mailto:person@gmail.com",
   },
   {
     id: 5,
-    child: <SiGoogledocs className="text-2xl" />,
+    child: <IoNewspaperOutline className="text-2xl" />,
 
     href: "",
 
