@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-[#111111]">
+    <section id="contact" className="bg-[#151515]">
       <Container>
         <SectionTitle
           heading="Get in Touch"
