@@ -1,40 +1,38 @@
 import { useEffect, useState } from "react";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
-import ProjectCard from "./ProjectCard";
+import BlogsCard from "./BlogsCard";
 
-const Projects = () => {
-  const [projects, setProjects] = useState([]);
+const Blogs = () => {
+  const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          "https://dashboard-server-ruddy.vercel.app/api/v1/projects"
+          "https://dashboard-server-ruddy.vercel.app/api/v1/blogs"
         );
         if (!res.ok) {
-          throw new Error("Failed to load projects data");
+          throw new Error("Failed To Load Blogs");
         }
         const data = await res.json();
-        setProjects(data);
+        setBlogs(data);
         console.log(data);
         setLoading(false);
       } catch (error) {
-        console.error(error, "Error fetching projects data");
+        console.error(error, "Error Fetching Blogs Data", error);
         setLoading(false);
         //  TODO: add toast to show the error message to user
       }
     };
     fetchData();
   }, []);
-
   return (
-    <section id="projects" className="bg-[#151515]">
+    <section id="blogs" className="bg-[#111111]">
       <Container>
-        <SectionTitle heading="Portfolio" subHeading="My Recent Works" />
+        <SectionTitle heading="Blogs" subHeading="My Personal Blogs" />
 
-        {/* main content */}
         <section>
           {loading ? (
             <div className="flex items-center justify-center">
@@ -43,8 +41,8 @@ const Projects = () => {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-              {projects?.data?.map((project) => (
-                <ProjectCard key={project.id} data={project} />
+              {blogs?.data?.map((project) => (
+                <BlogsCard key={project.id} data={project} />
               ))}
             </div>
           )}
@@ -54,4 +52,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Blogs;

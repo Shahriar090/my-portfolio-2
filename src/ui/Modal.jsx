@@ -32,7 +32,7 @@ const Modal = ({ isModalOpen, onClose, children }) => {
         {/* modal container */}
         <div
           ref={containerRef}
-          className="bg-[#151515] w-full max-w-2xl rounded-sm p-5"
+          className="bg-[#151515] w-full max-w-2xl rounded-sm p-8"
         >
           {children}
         </div>
@@ -57,7 +57,7 @@ const CloseButton = ({ children }) => {
   );
 };
 const Header = ({ children }) => {
-  return <div className=" w-full  relative">{children}</div>;
+  return <div className=" w-full relative">{children}</div>;
 };
 
 // props validation

@@ -49,7 +49,7 @@ const NavBar = () => {
 
           {/* drawer item */}
           {isMobileMenuOpen && (
-            <div className="fixed top-16 right-0 z-20 w-full h-screen bg-black bg-opacity-80">
+            <div className="fixed top-16  right-0 z-20 w-full h-screen bg-black bg-opacity-80">
               <div className="items w-full flex justify-end">
                 <ul className="space-y-5 p-10">
                   {navItems.map((item, index) => (

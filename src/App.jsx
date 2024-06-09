@@ -1,5 +1,6 @@
 import AboutMe from "./components/About/AboutMe";
 import HeroBanner from "./components/Banner/HeroBanner";
+import Blogs from "./components/Blogs/Blogs";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import MyServices from "./components/MyServices/MyServices";
@@ -21,6 +22,7 @@ function App() {
       <MyServices />
       <Skills />
       <Projects />
+      <Blogs />
       <Contact />
       <Footer />
       <ToastContainer />

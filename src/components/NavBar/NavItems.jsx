@@ -5,4 +5,5 @@ export const navItems = [
   { label: "Skills", link: "skills" },
   { label: "Portfolio", link: "projects" },
   { label: "Contact", link: "contact" },
+  { label: "Blogs", link: "blogs" },
 ];
