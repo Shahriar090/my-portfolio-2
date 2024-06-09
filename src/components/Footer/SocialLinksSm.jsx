@@ -30,7 +30,7 @@ export const links = [
     id: 5,
     child: <IoNewspaperOutline className="text-2xl" />,
 
-    href: "",
+    href: "https://drive.google.com/file/d/12KoU7IxVEod0_jfFq-1aqlcVzfdaDc8P/view?usp=sharing",
 
     download: true,
   },
