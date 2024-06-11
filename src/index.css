@@ -42,3 +42,7 @@ html {
     @apply transition-all duration-500;
   }
 }
+
+.active {
+  @apply text-[#FF5D56] font-bold;
+}

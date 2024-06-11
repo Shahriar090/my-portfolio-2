@@ -7,7 +7,7 @@ const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleDrawerToggle = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen((prev) => !prev);
   };
   return (
     <header className="w-full h-20 bg-black bg-opacity-30 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 ">
@@ -19,58 +19,45 @@ const NavBar = () => {
             </a>
           </h1>
         </div>
+        <div className="nav-sm-icons text-white absolute text-3xl right-1 md:hidden">
+          <button
+            onClick={handleDrawerToggle}
+            className="transition transform duration-500 ease-in-out"
+          >
+            {isMobileMenuOpen ? (
+              <span>
+                <MdClose className="text-[#FF5D56]" />
+              </span>
+            ) : (
+              <span>
+                <MdMenu />
+              </span>
+            )}
+          </button>
+        </div>
         <div className="nav-items">
-          <ul className="hidden md:flex space-x-5">
+          <ul
+            className={`flex flex-col md:flex-row items-end md:items-center pr-5 md:pr-0 gap-6  fixed md:static bg-black  md:bg-inherit z-[-1] md:z-auto  w-full h-auto left-0 py-8 md:py-0 md:w-auto transition-all duration-500 ease-in-out ${
+              isMobileMenuOpen ? "top-16" : "-top-[500px]"
+            }`}
+          >
             {navItems.map((item, index) => (
-              <li
-                key={index}
-                className=" text-[16px] uppercase text-white hover:text-[#FF5D56] transition-all duration-300 cursor-pointer"
-              >
-                <Link to={item.link} smooth duration={500}>
+              <li key={index} className="uppercase">
+                <Link
+                  to={item.link}
+                  onClick={handleDrawerToggle}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  activeClass="active"
+                  className="text-white hover:text-[#FF5D56] cursor-pointer duration-500"
+                >
                   {item.label}
                 </Link>
               </li>
             ))}
           </ul>
-        </div>
-
-        {/* small device drawer/menu*/}
-        <div className="md:hidden">
-          <button
-            className="text-4xl text-gray-200"
-            onClick={handleDrawerToggle}
-          >
-            {isMobileMenuOpen ? (
-              <MdClose className="text-[#FF5D56]" />
-            ) : (
-              <MdMenu />
-            )}
-          </button>
-
-          {/* drawer item */}
-          {isMobileMenuOpen && (
-            <div className="fixed top-16  right-0 z-20 w-full h-screen bg-black bg-opacity-80">
-              <div className="items w-full flex justify-end">
-                <ul className="space-y-5 p-10">
-                  {navItems.map((item, index) => (
-                    <li
-                      key={index}
-                      className="text-lg font-normal uppercase text-white hover:text-gray-300 transition-all duration-300"
-                    >
-                      <Link
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        to={item.link}
-                        smooth
-                        duration={500}
-                      >
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          )}
         </div>
       </nav>
     </header>

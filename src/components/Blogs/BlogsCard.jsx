@@ -25,14 +25,16 @@ const BlogsCard = ({ data }) => {
   return (
     <div className="w-full bg-[#222222] overflow-hidden cursor-pointer rounded-md">
       <div className=" content p-5">
-        <h1 className="text-xl font-semibold  text-white   uppercase pb-5 h-28">
-          {title}
-        </h1>
+        <div className="heading h-20">
+          <h1 className="text-xl font-medium  text-white capitalize">
+            {title}
+          </h1>
+        </div>
         <div className="img">
           <img
             src={blogImg}
             alt="Project Image"
-            className="w-full  rounded-md"
+            className="w-full h-[250px] object-cover rounded-md"
           />
         </div>
         <div className="mt-4">
@@ -44,21 +46,23 @@ const BlogsCard = ({ data }) => {
           </button>
           <Modal isModalOpen={modal} onClose={handleModalClose}>
             <Modal.Header>
-              <h1 className="text-2xl text-white font-medium">{title}</h1>
+              <h1 className="text-2xl text-white font-medium max-w-md">
+                {title}
+              </h1>
               <div
-                className="text-gray-200 text-[16px] h-52 overflow-y-auto overflow-x-auto mt-10 pr-4"
+                className="text-gray-200 text-[16px] w-full h-56 overflow-y-auto mt-10 pr-4"
                 dangerouslySetInnerHTML={{
                   __html: showFullDescription
                     ? content
                     : createShortenedContent(content),
                 }}
               />
-              {content.length > 60 && (
+              {content.length > 50 && (
                 <button
                   onClick={toggleDescription}
                   className="text-sm text-[#707070] font-semibold"
                 >
-                  {showFullDescription ? "See Less" : "See More"}
+                  {showFullDescription ? "See Less" : "Click Here To Read Full"}
                 </button>
               )}
               <Modal.CloseButton />
