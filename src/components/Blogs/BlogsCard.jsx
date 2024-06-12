@@ -46,9 +46,7 @@ const BlogsCard = ({ data }) => {
           </button>
           <Modal isModalOpen={modal} onClose={handleModalClose}>
             <Modal.Header>
-              <h1 className="text-2xl text-white font-medium max-w-md">
-                {title}
-              </h1>
+              <h1 className="text-2xl text-white font-medium">{title}</h1>
               <div
                 className="text-gray-200 text-[16px] w-full h-56 overflow-y-auto mt-10 pr-4"
                 dangerouslySetInnerHTML={{

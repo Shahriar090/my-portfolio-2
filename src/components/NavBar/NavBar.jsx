@@ -37,7 +37,7 @@ const NavBar = () => {
         </div>
         <div className="nav-items">
           <ul
-            className={`flex flex-col md:flex-row items-end md:items-center pr-5 md:pr-0 gap-6  fixed md:static bg-black  md:bg-inherit z-[-1] md:z-auto  w-full h-auto left-0 py-8 md:py-0 md:w-auto transition-all duration-500 ease-in-out ${
+            className={`flex flex-col md:flex-row items-center  gap-6  fixed md:static bg-black bg-opacity-90  md:bg-inherit z-[-1] md:z-auto  w-full h-auto left-0 py-8 md:py-0 md:w-auto transition-all duration-500 ease-in-out ${
               isMobileMenuOpen ? "top-16" : "-top-[500px]"
             }`}
           >
