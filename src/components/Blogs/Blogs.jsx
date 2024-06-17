@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import BlogsCard from "./BlogsCard";
-
+import Marquee from "react-fast-marquee";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -31,6 +31,14 @@ const Blogs = () => {
   return (
     <section id="blogs" className="bg-[#111111]">
       <Container>
+        {/* marquee start */}
+        <div className="marquee w-9/12 mx-auto overflow-hidden border border-zinc-700 mb-4 p-2 rounded-md">
+          <Marquee className="text-gray-300" speed={50} pauseOnClick={true}>
+            This section is under development. The blogs you are seeing are demo
+            blogs.
+          </Marquee>
+        </div>
+        {/* marquee end */}
         <SectionTitle heading="Blogs" subHeading="My Personal Blogs" />
 
         <section>
