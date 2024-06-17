@@ -34,8 +34,8 @@ const Blogs = () => {
         {/* marquee start */}
         <div className="marquee w-9/12 mx-auto overflow-hidden border border-zinc-700 mb-4 p-2 rounded-md">
           <Marquee className="text-gray-300" speed={50} pauseOnClick={true}>
-            This section is under development. The blogs you are seeing are demo
-            blogs.
+            The blogs section is currently under development. The blogs you see
+            are demo versions.
           </Marquee>
         </div>
         {/* marquee end */}
