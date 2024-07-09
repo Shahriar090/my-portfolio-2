@@ -25,7 +25,7 @@ const ProjectCard = ({ data }) => {
   };
   return (
     <div className="w-full bg-[#222222] overflow-hidden cursor-pointer rounded-md">
-      <div className=" content p-2">
+      <div className=" content">
         {/* <h1 className="text-xl font-semibold  text-white   uppercase pb-5">
           {projectTitle}
         </h1> */}
@@ -33,10 +33,10 @@ const ProjectCard = ({ data }) => {
           <img
             src={projectImg}
             alt="Project Image"
-            className="w-full  rounded-md"
+            className="w-full  rounded-md object-cover"
           />
         </div>
-        <div className="mt-4">
+        <div className="p-3">
           <button
             className="btn-primary"
             onClick={() => setModal((prev) => !prev)}
@@ -61,7 +61,7 @@ const ProjectCard = ({ data }) => {
                   {showFullDescription ? "See Less" : "See More"}
                 </button>
               )}
-              <div className="tools h-[160px] pt-5">
+              <div className="tools  pt-5">
                 <span className="font-medium text-[20px] text-[#FF5D56]">
                   Used Tools
                 </span>
@@ -71,7 +71,7 @@ const ProjectCard = ({ data }) => {
                   </li>
                 ))}
               </div>
-              <div className="buttons flex justify-between pt-8">
+              <div className="buttons flex justify-end gap-3">
                 <a className="btn btn-sm " href={githubLink} target="_blank">
                   GitHub
                 </a>

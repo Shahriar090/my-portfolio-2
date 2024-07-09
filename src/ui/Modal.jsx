@@ -32,7 +32,7 @@ const Modal = ({ isModalOpen, onClose, children }) => {
         {/* modal container */}
         <div
           ref={containerRef}
-          className="bg-[#151515] w-full max-w-2xl rounded-sm p-8"
+          className="bg-[#151515] w-full max-w-3xl rounded-sm p-8"
         >
           {children}
         </div>
