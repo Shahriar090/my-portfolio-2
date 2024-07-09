@@ -24,48 +24,52 @@ const BlogsCard = ({ data }) => {
   };
   return (
     <div className="w-full bg-[#222222] overflow-hidden cursor-pointer rounded-md">
-      <div className=" content p-5">
-        <div className="heading h-20">
-          <h1 className="text-xl font-medium  text-white capitalize">
-            {title}
-          </h1>
-        </div>
+      <div className="content flex flex-col">
         <div className="img">
           <img
             src={blogImg}
             alt="Project Image"
-            className="w-full h-[250px] object-cover rounded-md"
+            className="w-full h-[200px] object-cover rounded-md"
           />
         </div>
-        <div className="mt-4">
-          <button
-            className="btn-primary"
-            onClick={() => setModal((prev) => !prev)}
-          >
-            See Details
-          </button>
-          <Modal isModalOpen={modal} onClose={handleModalClose}>
-            <Modal.Header>
-              <h1 className="text-2xl text-white font-medium">{title}</h1>
-              <div
-                className="text-gray-200 text-[16px] w-full h-56 overflow-y-auto mt-10 pr-4"
-                dangerouslySetInnerHTML={{
-                  __html: showFullDescription
-                    ? content
-                    : createShortenedContent(content),
-                }}
-              />
-              {content.length > 50 && (
-                <button
-                  onClick={toggleDescription}
-                  className="text-sm text-[#707070] font-semibold"
-                >
-                  {showFullDescription ? "See Less" : "Click Here To Read Full"}
-                </button>
-              )}
-              <Modal.CloseButton />
-            </Modal.Header>
-          </Modal>
+        <div className="main-contents p-3">
+          <div className="line-clamp-1">
+            <h1 className="text-xl font-medium  text-white capitalize">
+              {title}
+            </h1>
+          </div>
+          <div className="mt-3">
+            <button
+              className="btn-primary"
+              onClick={() => setModal((prev) => !prev)}
+            >
+              See Details
+            </button>
+            <Modal isModalOpen={modal} onClose={handleModalClose}>
+              <Modal.Header>
+                <h1 className="text-2xl text-white font-medium">{title}</h1>
+                <div
+                  className="text-gray-200 text-[16px] w-full h-56 overflow-y-auto mt-10 pr-4"
+                  dangerouslySetInnerHTML={{
+                    __html: showFullDescription
+                      ? content
+                      : createShortenedContent(content),
+                  }}
+                />
+                {content.length > 50 && (
+                  <button
+                    onClick={toggleDescription}
+                    className="text-sm text-[#707070] font-semibold"
+                  >
+                    {showFullDescription
+                      ? "See Less"
+                      : "Click Here To Read Full"}
+                  </button>
+                )}
+                <Modal.CloseButton />
+              </Modal.Header>
+            </Modal>
+          </div>
         </div>
       </div>
     </div>
