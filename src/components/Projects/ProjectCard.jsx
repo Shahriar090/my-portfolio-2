@@ -72,16 +72,18 @@ const ProjectCard = ({ data }) => {
                   </li>
                 ))}
               </div>
-              <div className="buttons flex justify-end gap-3">
+              <div className="buttons flex justify-end gap-3 mt-4 md:mt-0">
                 <a
-                  className="btn btn-sm "
+                  className="btn btn-sm"
                   href={githubClientUrl}
                   target="_blank"
                 >
                   GitHub Client
                 </a>
                 {githubServerUrl === "nan" ? (
-                  <span className="text-[#707070]">No Server Side</span>
+                  <span className="text-[#707070] text-sm  my-auto">
+                    No Server
+                  </span>
                 ) : (
                   <a
                     className="btn btn-sm "
