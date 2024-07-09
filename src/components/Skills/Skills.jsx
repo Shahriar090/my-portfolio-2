@@ -19,6 +19,7 @@ const Skills = () => {
     { type: "Node Js", level: 60 },
     { type: "Express js", level: 60 },
     { type: "MongoDB", level: 60 },
+    { type: "Mongoose", level: 65 },
   ];
 
   const versionControlSkills = [{ type: "Github", level: 70 }];
