@@ -6,7 +6,8 @@ const ProjectCard = ({ data }) => {
     projectTitle,
     projectImg,
     projectDescription,
-    githubLink,
+    githubClientUrl,
+    githubServerUrl,
     liveDemo,
     usedTools,
   } = data;
@@ -72,9 +73,24 @@ const ProjectCard = ({ data }) => {
                 ))}
               </div>
               <div className="buttons flex justify-end gap-3">
-                <a className="btn btn-sm " href={githubLink} target="_blank">
-                  GitHub
+                <a
+                  className="btn btn-sm "
+                  href={githubClientUrl}
+                  target="_blank"
+                >
+                  GitHub Client
                 </a>
+                {githubServerUrl === "nan" ? (
+                  <span className="text-[#707070]">No Server Side</span>
+                ) : (
+                  <a
+                    className="btn btn-sm "
+                    href={githubServerUrl}
+                    target="_blank"
+                  >
+                    GitHub Server
+                  </a>
+                )}
                 <a className="btn btn-sm " href={liveDemo} target="_blank">
                   Live Demo
                 </a>
@@ -94,7 +110,8 @@ ProjectCard.propTypes = {
     projectTitle: PropTypes.string.isRequired,
     projectImg: PropTypes.string.isRequired,
     projectDescription: PropTypes.string.isRequired,
-    githubLink: PropTypes.string.isRequired,
+    githubClientUrl: PropTypes.string.isRequired,
+    githubServerUrl: PropTypes.string.isRequired,
     liveDemo: PropTypes.string.isRequired,
     usedTools: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
