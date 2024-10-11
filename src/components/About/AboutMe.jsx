@@ -9,7 +9,7 @@ const AboutMe = () => {
       {/* main content start */}
       <Container>
         <SectionTitle heading="About Me" subHeading="Personal Details" />
-        <div className=" flex flex-col-reverse md:flex-row md:items-center gap-5 lg:gap-0">
+        <div className="flex flex-col-reverse md:flex-row md:items-center gap-5 lg:gap-0">
           <div className="image flex-[1]">
             <picture>
               <img

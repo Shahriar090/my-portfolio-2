@@ -20,12 +20,14 @@ const HeroBanner = () => {
               Hi There, I am
             </span>
             {/* type  animation start*/}
-            <div className="text-start md:text-center ">
+            <div className="text-start md:text-center">
               <TypeAnimation
                 sequence={[
-                  " Front End Developer",
+                  "Front End Developer",
                   1000,
-                  " React JS Developer",
+                  "MERN Stack Developer",
+                  1000,
+                  "React JS Developer",
                   1000,
                   "JavaScript Developer",
                   1000,
