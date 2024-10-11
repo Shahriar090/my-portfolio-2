@@ -9,20 +9,23 @@ const Skills = () => {
     { type: "CSS", level: 80 },
     { type: "TailwindCSS", level: 80 },
     { type: "Bootstrap", level: 80 },
-    { type: "JavaScript", level: 75 },
-    { type: "TypeScript", level: 60 },
+    { type: "JavaScript", level: 80 },
+    { type: "TypeScript", level: 75 },
     { type: "React Js", level: 80 },
-    { type: "Redux", level: 60 },
+    { type: "Redux", level: 80 },
   ];
 
   const backEndSkills = [
-    { type: "Node Js", level: 60 },
-    { type: "Express js", level: 60 },
-    { type: "MongoDB", level: 60 },
-    { type: "Mongoose", level: 65 },
+    { type: "Node Js", level: 70 },
+    { type: "Express js", level: 70 },
+    { type: "MongoDB", level: 70 },
+    { type: "Mongoose", level: 70 },
   ];
 
-  const versionControlSkills = [{ type: "Github", level: 70 }];
+  const versionControlSkills = [
+    { type: "Git", level: 70 },
+    { type: "GitHub", level: 80 },
+  ];
 
   return (
     <section id="skills" className="bg-[#111111]">
