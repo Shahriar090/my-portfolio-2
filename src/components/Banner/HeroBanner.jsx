@@ -1,4 +1,3 @@
-import { IoIosArrowForward } from "react-icons/io";
 import heroImg from "../../assets/sky-bg.png";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-scroll";
@@ -12,12 +11,12 @@ const HeroBanner = () => {
           backgroundImage: `url(${heroImg})`,
         }}
       >
-        {/* <div className="overlay  absolute inset-0 bg-black bg-opacity-20"></div> */}
+        <div className="overlay  absolute inset-0 bg-black bg-opacity-20"></div>
 
         <div className="content absolute top-[30%]  md:left-[25%] md:right-[25%] transform translate(-50%, -50%)">
           <div className="texts flex flex-col space-y-6 pl-2 md:pl-0">
             <span className="text-xl sm:text-2xl text-white font-light capitalize text-start md:text-center">
-              Hi There, I am
+              I am here to serve as a
             </span>
             {/* type  animation start*/}
             <div className="text-start md:text-center">
@@ -43,20 +42,17 @@ const HeroBanner = () => {
             </div>
             {/* type animation end */}
 
-            <p className="text-white  text-lg text-start md:text-center font-light">
-              From Chittagong, Bangladesh, I am a React Js and Front End Web
-              Developer with a passion for crafting flawless websites.Let&apos;s
-              chat about turning your digital dreams into a reality.
+            <p className="text-white text-lg sm:text-xl text-start md:text-center font-light">
+              I am a JavaScript Developer from Chattogram, Bangladesh.
+              Currently, I provide Front-End web development services while also
+              having knowledge of back-end technologies within the MERN stack.
+              If you are interested in knowing more about me and how I can help
+              with your project, please feel free to reach out.
             </p>
           </div>
-          <div className="mt-6 flex justify-start md:justify-center  pl-2 sm:pl-0">
+          <div className="mt-6 flex justify-start md:justify-center pl-2 sm:pl-0">
             <Link to="projects" smooth duration={500}>
-              <button className="group btn-outline">
-                Portfolio
-                <span className="group-hover:rotate-90 transition-all duration-500">
-                  <IoIosArrowForward className="text-lg ml-1" />
-                </span>
-              </button>
+              <button className="btn-outline">My Latest Works</button>
             </Link>
           </div>
         </div>
