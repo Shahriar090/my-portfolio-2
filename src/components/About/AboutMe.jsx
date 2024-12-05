@@ -1,5 +1,5 @@
 import SectionTitle from "../../shared/SectionTitle";
-import myImg from "../../assets/my-photo-2.png";
+import myImg from "../../assets/my-photo.jpg";
 import Container from "../../shared/Container";
 import { myInfos } from "./Info";
 

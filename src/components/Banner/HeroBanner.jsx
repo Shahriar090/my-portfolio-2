@@ -23,18 +23,18 @@ const HeroBanner = () => {
             <div className="text-start md:text-center">
               <TypeAnimation
                 sequence={[
+                  "JavaScript Developer",
+                  1000,
                   "Front End Developer",
                   1000,
                   "MERN Stack Developer",
                   1000,
                   "React JS Developer",
                   1000,
-                  "JavaScript Developer",
-                  1000,
                 ]}
                 wrapper="span"
-                speed={60}
-                className="inline-block text-2xl sm:text-4xl lg:text-5xl font-medium"
+                speed={70}
+                className="inline-block text-2xl sm:text-3xl uppercase font-medium"
                 style={{
                   color: "#FF5D56",
                 }}
