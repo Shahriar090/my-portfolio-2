@@ -16,6 +16,7 @@ const Skills = () => {
   ];
 
   const backEndSkills = [
+    { type: "TypeScript", level: 75 },
     { type: "Node Js", level: 70 },
     { type: "Express js", level: 70 },
     { type: "MongoDB", level: 70 },
@@ -38,7 +39,7 @@ const Skills = () => {
         <section className="all-skills grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {/* Front-end skills */}
           <div className="p-5 bg-[#222222] rounded-sm">
-            <h2 className="text-xl font-medium text-white pb-3">Front-end</h2>
+            <h2 className="text-xl font-medium text-white pb-3">Front-End</h2>
             <SkillBar
               skills={frontEndSkills}
               colors={{
@@ -51,7 +52,7 @@ const Skills = () => {
 
           {/* Back-end skills */}
           <div className="p-5 bg-[#222222] rounded-sm">
-            <h2 className="text-xl font-medium text-white pb-3">Back-end</h2>
+            <h2 className="text-xl font-medium text-white pb-3">Back-End</h2>
             <SkillBar
               skills={backEndSkills}
               colors={{
