@@ -1,4 +1,5 @@
-MY PERSONAL PORTFOLIO
+## MY PERSONAL PORTFOLIO
+
 Welcome to my personal portfolio website. This website showcases my skills, projects, and experience as a JavaScript || Front-End || MERN stack developer. It serves as a professional online presence, demonstrating the technologies I've worked with and the projects I've built.
 
 🚀 ABOUT THIS APPLICATION
