@@ -3,6 +3,7 @@ import Container from "../../shared/Container";
 import SectionTitle from "../../shared/SectionTitle";
 import ProjectCard from "./ProjectCard";
 import Filtering from "./Filtering";
+import { toast } from "react-toastify";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -26,8 +27,8 @@ const Projects = () => {
         setLoading(false);
       } catch (error) {
         console.error(error, "Error fetching projects data");
+        toast.error("Error fetching projects data");
         setLoading(false);
-        //  TODO: add toast to show the error message to user
       }
     };
     fetchData();
@@ -53,9 +54,11 @@ const Projects = () => {
         <section>
           <Filtering onFilterChange={setSelectedCategory} />
           {loading ? (
-            <div className="flex items-center justify-center text-[#FF5D56]">
+            <div className="flex items-center justify-center">
               {" "}
-              <p>Loading....</p>
+              <p className="text-[#FF5D56] text-lg font-semibold">
+                Loading....
+              </p>
             </div>
           ) : filteredProjects.length === 0 ? (
             <div className="flex items-center justify-center">

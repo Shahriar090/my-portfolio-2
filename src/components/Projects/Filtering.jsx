@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import DownArrow from "../../assets/svg-icons/DownArrow";
 
 const Filtering = ({ onFilterChange }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,20 +22,7 @@ const Filtering = ({ onFilterChange }) => {
         {/* dropdown button */}
         <button onClick={toggleFiltering} className="btn-sm">
           {selected}
-          <svg
-            className="w-5 h-5 ml-2 -mr-1"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
+          <DownArrow className="w-5 h-5 ml-2 -mr-1" />
         </button>
       </div>
 
@@ -45,7 +33,7 @@ const Filtering = ({ onFilterChange }) => {
           <div className="py-1 flex flex-col">
             {options.map((option) => (
               <button
-                className="py-2 rounded-md hover:bg-[#222222] text-white transition-all duration-300 text-sm"
+                className="py-2 rounded-md hover:bg-[#222222] hover:text-[#FF5D56] text-white transition-all duration-300 text-sm"
                 key={option}
                 onClick={() => handleSelect(option)}
               >

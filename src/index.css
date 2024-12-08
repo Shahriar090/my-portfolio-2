@@ -22,7 +22,7 @@ html {
   .btn-primary {
     @apply px-8 py-3;
     @apply inline-flex items-center justify-center;
-    @apply rounded-sm bg-black  text-white;
+    @apply rounded-md bg-black  text-white;
     @apply hover:bg-[#FF5D56];
     @apply transition-all duration-500;
   }
