@@ -44,7 +44,7 @@ export const myInfos = [
         />
       </svg>
     ),
-    info: "Chittagong, Bangladesh",
+    info: "Chattogram, Bangladesh",
   },
   {
     id: 4,
