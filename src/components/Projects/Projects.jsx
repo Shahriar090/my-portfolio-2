@@ -4,46 +4,38 @@ import SectionTitle from "../../shared/SectionTitle";
 import ProjectCard from "./ProjectCard";
 import Filtering from "./Filtering";
 import { toast } from "react-toastify";
+import { useFetch } from "../../hooks/useFetch";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [filteredProjects, setFilteredProjects] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("ALL");
+  const [filteredProjects, setFilteredProjects] = useState([]);
+
+  // using custom hook to fetch data
+  const {
+    data: projects,
+    loading,
+    error,
+  } = useFetch(`${import.meta.env.VITE_SERVER_URL}/projects`);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const res = await fetch(
-          "https://dashboard-server-ruddy.vercel.app/api/v1/projects"
+    if (projects) {
+      if (selectedCategory === "ALL") {
+        setFilteredProjects(projects?.data);
+      } else {
+        const filtered = projects?.data?.filter(
+          (project) => project.category === selectedCategory
         );
-        if (!res.ok) {
-          throw new Error("Failed to load projects data");
-        }
-        const data = await res.json();
-        setProjects(data?.data);
-        setFilteredProjects(data?.data);
-        setLoading(false);
-      } catch (error) {
-        console.error(error, "Error fetching projects data");
-        toast.error("Error fetching projects data");
-        setLoading(false);
+        setFilteredProjects(filtered);
       }
-    };
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    if (selectedCategory === "ALL") {
-      setFilteredProjects(projects);
-    } else {
-      const filtered = projects?.filter(
-        (project) => project.category === selectedCategory
-      );
-      setFilteredProjects(filtered);
     }
   }, [projects, selectedCategory]);
+
+  // handling error
+  useEffect(() => {
+    if (error) {
+      toast.error(error);
+    }
+  }, [error]);
 
   return (
     <section id="projects" className="bg-[#151515]">
