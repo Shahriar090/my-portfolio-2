@@ -131,10 +131,7 @@ const Contact = () => {
               )}
             </div>
             <div className="submit-btn flex justify-center mt-5">
-              <button
-                type="submit"
-                className="btn-outline text-[#ff5d56] border-[#ff5d56] hover:bg-[#ff5d56] hover:text-white"
-              >
+              <button type="submit" className="animated-btn">
                 Contact Now
               </button>
             </div>

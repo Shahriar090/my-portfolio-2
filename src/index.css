@@ -41,6 +41,14 @@ html {
     @apply hover:border-[#FF5D56] hover:text-[#FF5D56];
     @apply transition-all duration-500;
   }
+
+  .animated-btn {
+    @apply relative tracking-wide capitalize text-[16px] inline-block text-center font-medium px-8 py-3;
+    @apply border border-[#FF5D56] rounded-md shadow-lg text-white no-underline;
+    @apply transition-all duration-300 ease-in-out z-[1];
+    @apply hover:text-white focus:text-white before:absolute before:top-0 before:left-1/2 before:right-1/2 before:bottom-0 before:opacity-0 before:content-[''] before:bg-[#FF5D56] before:z-[-1];
+    @apply before:transition-all before:duration-700 before:ease-in-out hover:before:left-0 hover:before:right-0 hover:before:opacity-100 active:scale-90;
+  }
 }
 
 .active {

@@ -52,7 +52,7 @@ const HeroBanner = () => {
           </div>
           <div className="mt-6 flex justify-start md:justify-center pl-2 sm:pl-0">
             <Link to="projects" smooth duration={500}>
-              <button className="btn-outline">My Latest Works</button>
+              <button className="animated-btn">My Latest Works</button>
             </Link>
           </div>
         </div>
