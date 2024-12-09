@@ -13,7 +13,7 @@ const NavBar = () => {
     <header className="w-full h-20 bg-black bg-opacity-30 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 ">
       <nav className="nav-container w-full h-full max-w-screen-xl mx-auto flex items-center justify-between px-2 ">
         <div className="logo">
-          <h1 className="text-2xl md:text-4xl  text-white capitalize font-berkshire-swash font-normal">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl text-white capitalize font-berkshire-swash font-normal">
             <a href="#">
               Shahriar <span className="text-[#FF5D56]">Hossain</span>
             </a>
