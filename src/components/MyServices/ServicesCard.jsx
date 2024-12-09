@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const ServicesCard = ({ data }) => {
   const { service, description, serviceImg } = data;
   return (
-    <div className="w-full h-[270px] group bg-[#222222]  rounded-sm border border-[#333] flex flex-col cursor-pointer hover:border-[#FF5D56] transition-all duration-500 p-6">
+    <div className="w-full h-full md:h-[280px] group bg-[#222222]  rounded-sm border border-[#333] flex flex-col cursor-pointer hover:border-[#FF5D56] transition-all duration-500 p-6">
       <div>{serviceImg}</div>
       <div className="details text-start">
         <h2
