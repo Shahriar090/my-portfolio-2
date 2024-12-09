@@ -9,17 +9,17 @@ const AboutMe = () => {
       {/* main content start */}
       <Container>
         <SectionTitle heading="About Me" subHeading="Personal Details" />
-        <div className="flex flex-col-reverse md:flex-row md:items-center gap-5 lg:gap-0">
-          <div className="image flex-[1]">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-5 lg:gap-0">
+          <div className="image w-full md:w-[40%]">
             <picture>
               <img
                 src={myImg}
                 alt="My Image"
-                className="w-full lg:w-3/4 mx-auto rounded-md"
+                className="w-full lg:w-[75%] lg:mx-auto rounded-md"
               />
             </picture>
           </div>
-          <div className="details flex-[2]">
+          <div className="details w-full md:w-[60%]">
             <div className="flex flex-col gap-4">
               <span className="text-xl text-[#707070]">I Am</span>
               <h1 className="text-2xl md:text-3xl  font-medium text-white">
@@ -51,10 +51,6 @@ const AboutMe = () => {
                   </div>
                 ))}
               </div>
-              {/* <div className="space-x-3">
-                <button className="btn-outline">Contact Now</button>
-                <button className="btn-outline">See Projects</button>
-              </div> */}
             </div>
           </div>
         </div>
