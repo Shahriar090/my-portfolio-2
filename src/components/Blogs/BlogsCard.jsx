@@ -70,7 +70,7 @@ const BlogsCard = ({ data }) => {
                 <h1 className="text-xl md:text-2xl text-white font-medium">
                   {title}
                 </h1>
-                <div className="w-full h-[400px] md:h-auto overflow-y-auto mt-10 pr-4">
+                <div className="w-full h-[400px] overflow-y-auto mt-10 pr-4">
                   <p className="text-gray-200 text-[22px] tracking-wider font-light">
                     {showFullDescription
                       ? getPlainText(content)
