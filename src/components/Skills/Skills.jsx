@@ -36,7 +36,7 @@ const Skills = () => {
           subHeading="Technologies I Worked With"
         />
 
-        <section className="all-skills grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <section className="all-skills grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {/* Front-end skills */}
           <div className="p-5 bg-[#222222] rounded-sm">
             <h2 className="text-xl font-medium text-white pb-3">Front-End</h2>

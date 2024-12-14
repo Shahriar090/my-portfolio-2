@@ -11,7 +11,7 @@ const HeroBanner = () => {
           backgroundImage: `url(${heroImg})`,
         }}
       >
-        <div className="overlay  absolute inset-0 bg-black bg-opacity-20"></div>
+        <div className="overlay  absolute inset-0 bg-black bg-opacity-40"></div>
 
         <div className="content absolute top-[20%] sm:top-[30%] md:right-[10%] md:left-[10%] lg:right-[22%] lg:left-[22%] transform translate(-50%, -50%)">
           <div className="texts flex flex-col space-y-6 pl-2 md:pl-0">
@@ -52,7 +52,7 @@ const HeroBanner = () => {
           </div>
           <div className="mt-6 flex justify-start md:justify-center pl-2 sm:pl-0">
             <Link to="projects" smooth duration={500}>
-              <button className="animated-btn">My Latest Works</button>
+              <button className="animated-btn">Latest Works</button>
             </Link>
           </div>
         </div>

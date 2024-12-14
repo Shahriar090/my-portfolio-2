@@ -1,5 +1,5 @@
 import SectionTitle from "../../shared/SectionTitle";
-import myImg from "../../assets/my-photo.jpg";
+import myImg from "../../assets/my-photo-4.jpeg";
 import Container from "../../shared/Container";
 import { myInfos } from "./Info";
 
@@ -10,12 +10,12 @@ const AboutMe = () => {
       <Container>
         <SectionTitle heading="About Me" subHeading="Personal Details" />
         <div className="flex flex-col-reverse md:flex-row items-center gap-5 lg:gap-0">
-          <div className="image w-full md:w-[40%]">
+          <div className="image w-full md:w-[40%] overflow-hidden cursor-pointer">
             <picture>
               <img
                 src={myImg}
                 alt="My Image"
-                className="w-full lg:w-[75%] lg:mx-auto rounded-md"
+                className="w-full lg:w-[75%] h-full md:h-[500px] lg:object-cover lg:mx-auto rounded-md hover:scale-125 transition-all duration-300 ease-in"
               />
             </picture>
           </div>

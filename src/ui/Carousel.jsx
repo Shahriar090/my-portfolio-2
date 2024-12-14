@@ -45,7 +45,7 @@ const Carousel = ({
       className="relative w-full  mx-auto"
       style={{ height: carouselHeight }}
     >
-      {/* Carousel images */}
+      {/* Carousel items */}
       <div className="overflow-hidden">
         <div
           className="flex"
