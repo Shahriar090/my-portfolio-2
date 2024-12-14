@@ -25,14 +25,14 @@ const Modal = ({ isModalOpen, onClose, children, className }) => {
       <div
         onClick={handleOutsideClose}
         className={cn(
-          "fixed flex items-center justify-center inset-0 bg-gray-700/70 invisible z-[999]",
+          "fixed flex items-center justify-center inset-0 bg-gray-800/70 invisible z-[999] p-1",
           { visible: isModalOpen }
         )}
       >
         {/* modal container */}
         <div
           ref={containerRef}
-          className={cn("bg-[#151515]  rounded-sm p-8", className)}
+          className={cn("bg-[#151515]  rounded-sm", className)}
         >
           {children}
         </div>

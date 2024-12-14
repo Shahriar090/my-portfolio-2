@@ -47,7 +47,7 @@ const ProjectCard = ({ data }) => {
           <Modal
             isModalOpen={modal}
             onClose={handleModalClose}
-            className={"w-full h-auto md:max-w-3xl p-4 md:p-8"}
+            className={"w-full h-[60%] overflow-y-auto md:max-w-3xl p-4 md:p-8"}
           >
             <Modal.Header>
               <h1 className="text-4xl text-[#FF5D56] font-berkshire-swash ">
@@ -98,7 +98,7 @@ const ProjectCard = ({ data }) => {
                   </a>
                 )}
                 <a className="btn btn-sm " href={liveDemo} target="_blank">
-                  Live Demo
+                  Live Site
                 </a>
               </div>
               <Modal.CloseButton></Modal.CloseButton>
