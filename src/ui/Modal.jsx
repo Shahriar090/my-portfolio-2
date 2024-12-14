@@ -51,7 +51,7 @@ const CloseButton = ({ children }) => {
       {children ? (
         children
       ) : (
-        <IoClose className="text-4xl  text-[#FF5D56] h-8 w-8  absolute top-0 right-0 border border-neutral-600 rounded-full p-1" />
+        <IoClose className="text-4xl  text-[#FF5D56] h-8 w-8  absolute -top-4 -right-4 border border-neutral-600 rounded-full p-1" />
       )}
     </button>
   );

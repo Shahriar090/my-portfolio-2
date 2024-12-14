@@ -64,11 +64,12 @@ const BlogsCard = ({ data }) => {
             <Modal
               isModalOpen={modal}
               onClose={handleModalClose}
-              modalWidth={"80%"}
-              modalHeight={"auto"}
+              className={"w-full h-auto md:max-w-7xl p-4 md:p-8"}
             >
               <Modal.Header>
-                <h1 className="text-2xl text-white font-medium">{title}</h1>
+                <h1 className="text-xl md:text-2xl text-white font-medium">
+                  {title}
+                </h1>
                 <div className="w-full h-80 overflow-y-auto mt-10 pr-4">
                   <p className="text-gray-200 text-[22px] tracking-wider font-light">
                     {showFullDescription
