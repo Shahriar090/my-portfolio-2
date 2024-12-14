@@ -44,7 +44,12 @@ const ProjectCard = ({ data }) => {
           >
             See Details
           </button>
-          <Modal isModalOpen={modal} onClose={handleModalClose}>
+          <Modal
+            isModalOpen={modal}
+            onClose={handleModalClose}
+            modalWidth={"50%"}
+            modalHeight={"auto"}
+          >
             <Modal.Header>
               <h1 className="text-4xl text-[#FF5D56] font-berkshire-swash ">
                 {projectTitle}

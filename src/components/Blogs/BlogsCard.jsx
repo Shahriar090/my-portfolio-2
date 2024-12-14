@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Modal from "../../ui/Modal";
 import PropTypes from "prop-types";
+
 const BlogsCard = ({ data }) => {
   const { title, blogImg, content } = data;
   const [modal, setModal] = useState(false);
@@ -17,11 +18,26 @@ const BlogsCard = ({ data }) => {
     setShowFullDescription(!showFullDescription);
   };
 
-  const createShortenedContent = (htmlContent) => {
+  // function to remove html tags and return plain text
+  const getPlainText = (htmlContent) => {
     const temporaryDiv = document.createElement("div");
     temporaryDiv.innerHTML = htmlContent;
-    return temporaryDiv.innerText.slice(0, 180);
+    return temporaryDiv.innerText;
   };
+
+  // function to get the first 100 words from the plain text
+
+  const getShortenedContent = (content, wordLimit) => {
+    const plainText = getPlainText(content);
+    const words = plainText.split(" ");
+    if (words.length <= wordLimit) {
+      return plainText;
+    }
+    return words.slice(0, wordLimit).join(" ") + " ......";
+  };
+
+  const truncatedContent = getShortenedContent(content, 100);
+
   return (
     <div className="w-full bg-[#222222] overflow-hidden cursor-pointer rounded-md">
       <div className="content flex flex-col">
@@ -45,18 +61,22 @@ const BlogsCard = ({ data }) => {
             >
               See Details
             </button>
-            <Modal isModalOpen={modal} onClose={handleModalClose}>
+            <Modal
+              isModalOpen={modal}
+              onClose={handleModalClose}
+              modalWidth={"80%"}
+              modalHeight={"auto"}
+            >
               <Modal.Header>
                 <h1 className="text-2xl text-white font-medium">{title}</h1>
-                <div
-                  className="text-gray-200 text-[16px] w-full h-56 overflow-y-auto mt-10 pr-4"
-                  dangerouslySetInnerHTML={{
-                    __html: showFullDescription
-                      ? content
-                      : createShortenedContent(content),
-                  }}
-                />
-                {content.length > 50 && (
+                <div className="w-full h-80 overflow-y-auto mt-10 pr-4">
+                  <p className="text-gray-200 text-[22px] tracking-wider font-light">
+                    {showFullDescription
+                      ? getPlainText(content)
+                      : truncatedContent}
+                  </p>
+                </div>
+                {getPlainText(content).length > 100 && (
                   <button
                     onClick={toggleDescription}
                     className="text-sm text-[#707070] font-semibold"

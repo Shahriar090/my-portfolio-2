@@ -6,7 +6,7 @@ import { IoClose } from "react-icons/io5";
 import PropTypes from "prop-types";
 // modal context
 const ModalContext = createContext(null);
-const Modal = ({ isModalOpen, onClose, children }) => {
+const Modal = ({ isModalOpen, onClose, children, modalWidth, modalHeight }) => {
   // creating modal container ref
   const containerRef = useRef(null);
 
@@ -32,7 +32,13 @@ const Modal = ({ isModalOpen, onClose, children }) => {
         {/* modal container */}
         <div
           ref={containerRef}
-          className="bg-[#151515] w-full max-w-3xl rounded-sm p-8"
+          className="bg-[#151515] rounded-sm p-8"
+          style={{
+            width: modalWidth || "auto",
+            height: modalHeight || "auto",
+            maxHeight: "80vh",
+            maxWidth: "80vw",
+          }}
         >
           {children}
         </div>
