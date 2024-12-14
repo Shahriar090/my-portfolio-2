@@ -47,8 +47,7 @@ const ProjectCard = ({ data }) => {
           <Modal
             isModalOpen={modal}
             onClose={handleModalClose}
-            modalWidth={"50%"}
-            modalHeight={"auto"}
+            className={"w-full h-auto md:max-w-3xl p-4 md:p-8"}
           >
             <Modal.Header>
               <h1 className="text-4xl text-[#FF5D56] font-berkshire-swash ">
@@ -77,7 +76,7 @@ const ProjectCard = ({ data }) => {
                   </li>
                 ))}
               </div>
-              <div className="buttons flex justify-end gap-3 mt-4 md:mt-0">
+              <div className="buttons flex items-center justify-end gap-3 mt-4 md:mt-0">
                 <a
                   className="btn btn-sm"
                   href={githubClientUrl}

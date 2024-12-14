@@ -6,7 +6,7 @@ import { IoClose } from "react-icons/io5";
 import PropTypes from "prop-types";
 // modal context
 const ModalContext = createContext(null);
-const Modal = ({ isModalOpen, onClose, children, modalWidth, modalHeight }) => {
+const Modal = ({ isModalOpen, onClose, children, className }) => {
   // creating modal container ref
   const containerRef = useRef(null);
 
@@ -32,13 +32,7 @@ const Modal = ({ isModalOpen, onClose, children, modalWidth, modalHeight }) => {
         {/* modal container */}
         <div
           ref={containerRef}
-          className="bg-[#151515] rounded-sm p-8"
-          style={{
-            width: modalWidth || "auto",
-            height: modalHeight || "auto",
-            maxHeight: "80vh",
-            maxWidth: "80vw",
-          }}
+          className={cn("bg-[#151515]  rounded-sm p-8", className)}
         >
           {children}
         </div>
@@ -57,7 +51,7 @@ const CloseButton = ({ children }) => {
       {children ? (
         children
       ) : (
-        <IoClose className="text-4xl  text-[#FF5D56] h-8 w-8  absolute -top-7 -right-7 border border-neutral-600 rounded-full p-1" />
+        <IoClose className="text-4xl  text-[#FF5D56] h-8 w-8  absolute top-0 right-0 border border-neutral-600 rounded-full p-1" />
       )}
     </button>
   );
