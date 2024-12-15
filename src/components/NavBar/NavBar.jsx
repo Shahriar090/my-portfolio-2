@@ -1,16 +1,42 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { navItems } from "./NavItems";
 import { MdMenu, MdClose } from "react-icons/md";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const [lastScroll, setLastScroll] = useState(0);
 
+  // Hides the navbar when scrolling down and shows it when scrolling up
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > lastScroll && currentScroll > 50) {
+        setIsHidden(true);
+      } else {
+        setIsHidden(false);
+      }
+      setLastScroll(currentScroll);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    // cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScroll]);
+
+  // mobile drawer
   const handleDrawerToggle = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
   return (
-    <header className="w-full h-20 bg-black bg-opacity-30 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 ">
+    <header
+      className={`w-full h-20 bg-black bg-opacity-30 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
+        isHidden ? "-translate-y-full" : "translate-y-0"
+      }`}
+    >
       <nav className="nav-container w-full h-full max-w-screen-xl mx-auto flex items-center justify-between px-2 ">
         <div className="logo">
           <h1 className="text-2xl md:text-3xl lg:text-4xl text-white capitalize font-berkshire-swash font-normal">
