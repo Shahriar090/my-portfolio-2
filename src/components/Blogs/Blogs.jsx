@@ -12,6 +12,7 @@ const Blogs = () => {
     loading,
     error,
   } = useFetch(`${import.meta.env.VITE_SERVER_URL}/blogs`);
+  console.log(blogsData);
   // handling error
   useEffect(() => {
     if (error) {
@@ -51,8 +52,8 @@ const Blogs = () => {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-              {blogsData?.data?.map((project) => (
-                <BlogsCard key={project.id} data={project} />
+              {blogsData?.data?.map((blog) => (
+                <BlogsCard key={blog._id} data={blog} />
               ))}
             </div>
           )}

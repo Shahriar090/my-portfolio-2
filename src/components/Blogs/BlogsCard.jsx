@@ -15,29 +15,30 @@ const BlogsCard = ({ data }) => {
   // toggle description
 
   const toggleDescription = () => {
-    setShowFullDescription(!showFullDescription);
+    setShowFullDescription((prev) => !prev);
   };
 
-  // function to remove html tags and return plain text
-  const getPlainText = (htmlContent) => {
-    const temporaryDiv = document.createElement("div");
-    temporaryDiv.innerHTML = htmlContent;
-    return temporaryDiv.innerText;
-  };
-
-  // function to get the first 100 words from the plain text
-
+  // function to get the first 'n' words from the plain text
   const getShortenedContent = (content, wordLimit) => {
-    const plainText = getPlainText(content);
+    const temporaryDiv = document.createElement("div");
+    temporaryDiv.innerHTML = content;
+
+    // convert HTML to plain text
+    const plainText = temporaryDiv.innerText.trim();
     const words = plainText.split(" ");
     if (words.length <= wordLimit) {
-      return plainText;
+      return content;
     }
-    return words.slice(0, wordLimit).join(" ") + " ......";
+
+    const truncatedText = words.slice(0, wordLimit).join(" ") + " ....";
+
+    return content.slice(
+      0,
+      content.indexOf(truncatedText) + truncatedText.length
+    );
   };
 
   const truncatedContent = getShortenedContent(content, 100);
-
   return (
     <div className="w-full bg-[#222222] overflow-hidden cursor-pointer rounded-md">
       <div className="content flex flex-col">
@@ -72,12 +73,16 @@ const BlogsCard = ({ data }) => {
                 </h1>
                 <div className="w-full h-[400px] overflow-y-auto mt-10 pr-4">
                   <p className="text-gray-200 text-[22px] tracking-wider font-light">
-                    {showFullDescription
-                      ? getPlainText(content)
-                      : truncatedContent}
+                    {showFullDescription ? (
+                      <div dangerouslySetInnerHTML={{ __html: content }} />
+                    ) : (
+                      <div
+                        dangerouslySetInnerHTML={{ __html: truncatedContent }}
+                      />
+                    )}
                   </p>
                 </div>
-                {getPlainText(content).length > 100 && (
+                {content.length > 100 && (
                   <button
                     onClick={toggleDescription}
                     className="text-sm text-[#707070] font-semibold"

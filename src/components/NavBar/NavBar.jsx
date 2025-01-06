@@ -77,7 +77,7 @@ const NavBar = () => {
                   offset={-70}
                   duration={500}
                   activeClass="active"
-                  className="text-white hover:text-[#FF5D56] cursor-pointer duration-500"
+                  className="relative text-white hover:text-[#FF5D56] cursor-pointer duration-500"
                 >
                   {item.label}
                 </Link>
